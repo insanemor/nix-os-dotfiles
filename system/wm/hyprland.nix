@@ -5,7 +5,7 @@
   programs.hyprland = {
     # Install the packages from nixpkgs
     enable = true;
-    nvidiaPatches = true;
+    # nvidiaPatches = true;
     xwayland.enable = true;
   };
 
@@ -25,14 +25,14 @@
     pkgs.hyprpaper
     pkgs.swaybg
     pkgs.mpvpaper
-    swww
-    kitty
-    wezterm # testar esse 
-    rofi-wayland
-    wofi
-    bemenu
-    fuzzel
-    tofi
+    pkgs.swww
+    pkgs.kitty
+    pkgs.wezterm # testar esse 
+    pkgs.rofi-wayland
+    pkgs.wofi
+    pkgs.bemenu
+    pkgs.fuzzel
+    pkgs.tofi
 
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
