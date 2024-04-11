@@ -2,25 +2,6 @@
 
 {
 
-  imports =
-    [ # Include
-
-    ];
-
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    xkb.layout = "br";
-    xkb.variant = "dvorak";
-  };
-
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -37,10 +18,6 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-
-
-  # Configure console keymap
-  console.keyMap = "dvorak";
 
 
 
