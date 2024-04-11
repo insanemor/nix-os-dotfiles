@@ -1,7 +1,7 @@
 { config, pkgs, userSettings, ... }:
 
 {
-  home.packages = [ vscode ];
+  home.packages = [ pkgs.vscode ];
 
 
   programs.vscode = {
