@@ -18,7 +18,6 @@ in
     enable = true;
     history.size = -1;
     autosuggestion.enable = true;
-    zsh-autoenv.enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     shellAliases = myAliases;
