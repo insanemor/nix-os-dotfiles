@@ -42,6 +42,10 @@ in
     '';
   };
 
+
+ # Gerencia o arquivo powerlevel10k.zsh-theme
+  home.file.".zsh-powerlevel10k.zsh-theme".source = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+
   programs.bash = {
     enable = true;
     enableCompletion = true;
