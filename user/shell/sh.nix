@@ -16,7 +16,12 @@ in
 {
   programs.zsh = {
     enable = true;
-    history.size = -1;
+    history.size = 10000;
+    history.save = 10000;
+    history.expireDuplicatesFirst = true;
+    history.ignoreDups = true;
+    history.ignoreSpace = true;
+    historySubstringSearch.enable = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
