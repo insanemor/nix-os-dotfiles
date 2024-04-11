@@ -16,6 +16,7 @@
       ../../system/hardware/printing.nix
       ../../system/hardware/bluetooth.nix
       ../../system/security/automount.nix
+      ../../user/app/vscode/vscode.nix # My git config
       #(./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
 
     ];
