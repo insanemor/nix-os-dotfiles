@@ -8,6 +8,7 @@
     [ ../../system/hardware-configuration.nix
       ../../system/hardware/audio.nix
       ../../system/wm/gdm.nix
+      ../../system/wm/hyprland.nix
       ../../system/hardware/systemd.nix # systemd config
       ../../system/hardware/power.nix # Power management
       ../../system/hardware/time.nix # Network time sync
