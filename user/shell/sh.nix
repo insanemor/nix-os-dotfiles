@@ -16,10 +16,32 @@ in
 {
   programs.zsh = {
     enable = true;
+    histSize = -1;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     shellAliases = myAliases;
+    ohMyZsh = {
+        enable = true;
+        theme = "alanpeabody";
+        plugins = [
+          "git"
+          "history-substring-search"
+          "colored-man-pages"
+          "zsh-autosuggestions"
+          "zsh-syntax-highlighting"
+          "sudo"
+          "web-search"
+          "copyfile"
+          "copybuffer"
+          "dirhistory"
+          "jsontools"
+          "nixos"
+
+        ];
+      };
+
+
     initExtra = ''
     PROMPT=" ◉ %U%F{magenta}%n%f%u@%U%F{blue}%m%f%u:%F{yellow}%~%f
      %F{green}→%f "
