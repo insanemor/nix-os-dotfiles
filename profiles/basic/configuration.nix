@@ -10,7 +10,7 @@
       ../../system/wm/gdm.nix
       ../../system/wm/hyprland.nix
       ../../system/hardware/systemd.nix # systemd config
-      ../../system/hardware/power.nix # Power management
+      # ../../system/hardware/power.nix # Power management conflito com services.power-profiles-daemon.enable = true;
       ../../system/hardware/time.nix # Network time sync
       ../../system/hardware/opengl.nix
       ../../system/hardware/printing.nix
