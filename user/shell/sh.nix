@@ -28,15 +28,12 @@ in
         "git" 
         "history-substring-search"
         "colored-man-pages"
-        "zsh-autosuggestions"
-        "zsh-syntax-highlighting"
         "sudo"
         "web-search"
         "copyfile"
         "copybuffer"
         "dirhistory"
         "jsontools"
-        "nixos"
       ];
     };
     initExtra = ''
