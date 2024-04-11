@@ -49,7 +49,7 @@
 
 
   # rofi keybind
-  bind = $mainMod, S, exec, rofi -show drun -show-icons
+  # bind = $mainMod, S, exec, rofi -show drun -show-icons
 
 
     
