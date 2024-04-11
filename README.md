@@ -92,6 +92,10 @@ Este comando otimiza o armazenamento do Nix, consolidando arquivos duplicados.
 
 Reforça as permissões dos arquivos e pastas em `.dotfiles`.
 
+### `soften.sh`
+
+Libera as permissões dos arquivos e pastas em `.dotfiles`.
+
 ### `install.sh`
 
 Instala o NixOS e o Home Manager, aplicando todas as configurações deste repositório.
