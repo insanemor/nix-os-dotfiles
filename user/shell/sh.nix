@@ -24,20 +24,7 @@ in
     ohMyZsh = {
         enable = true;
         theme = "alanpeabody";
-        plugins = [
-          "git"
-          "history-substring-search"
-          "colored-man-pages"
-          "zsh-autosuggestions"
-          "zsh-syntax-highlighting"
-          "sudo"
-          "web-search"
-          "copyfile"
-          "copybuffer"
-          "dirhistory"
-          "jsontools"
-          "nixos"
-        ];
+        plugins = [ "git" "nixos" ];
       };
 
 
