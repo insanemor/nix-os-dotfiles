@@ -1,13 +1,13 @@
 { config, pkgs, userSettings, ... }:
 
 {
-  home.packages = with pkgs; [ 
-    pkgs.vscode 
-    pkgs.vscode-with-extensions 
-  ];
+
+  environment.systemPackages = with pkgs; [ vscode ];
 
 
   programs.vscode = {
     enable = true;
+    package = pkgs.vscode.fhs;
   };
+
 }
