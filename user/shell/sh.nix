@@ -55,6 +55,7 @@ in
     gnugrep gnused
     bat eza bottom fd bc
     direnv nix-direnv
+    powerlevel10k
   ];
 
   programs.direnv.enable = true;
