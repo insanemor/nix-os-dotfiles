@@ -21,10 +21,10 @@
     pkgs.waybar
     pkgs.eww
     pkgs.dunst
-    libnotify
-    hyprpaper
-    swaybg
-    mpvpaper
+    pkgs.libnotify
+    pkgs.hyprpaper
+    pkgs.swaybg
+    pkgs.mpvpaper
     swww
     kitty
     wezterm # testar esse 
