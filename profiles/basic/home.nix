@@ -10,11 +10,11 @@
 
   imports = [
               #(./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
+              ../../user/app/git/git.nix # My git config
               #../../user/shell/sh.nix # My zsh and bash config
               #../../user/shell/cli-collection.nix # Useful CLI apps
               #../../user/app/doom-emacs/doom.nix # My doom emacs config
               #../../user/app/ranger/ranger.nix # My ranger file manager config
-              #../../user/app/git/git.nix # My git config
               #./../user/app/keepass/keepass.nix # My password manager
               #(./. + "../../../user/app/browser"+("/"+userSettings.browser)+".nix") # My default browser selected from flake
               #../../user/app/virtualization/virtualization.nix # Virtual machines
