@@ -22,10 +22,10 @@ in
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     shellAliases = myAliases;
-    ohMyZsh = {
+    oh-my-zsh = {
       enable = true;
       theme = "alanpeabody";
-      #plugins = [ "git" "thefuck" ];
+      plugins = [ "git" "thefuck" ];
     };
     initExtra = ''
     PROMPT=" ◉ %U%F{magenta}%n%f%u@%U%F{blue}%m%f%u:%F{yellow}%~%f
