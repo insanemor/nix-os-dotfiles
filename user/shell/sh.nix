@@ -25,9 +25,7 @@ in
         enable = true;
         theme = "alanpeabody";
         plugins = [ "git" "nixos" ];
-      };
-
-
+    };
     initExtra = ''
     PROMPT=" ◉ %U%F{magenta}%n%f%u@%U%F{blue}%m%f%u:%F{yellow}%~%f
      %F{green}→%f "
