@@ -5,7 +5,7 @@
 # preserving local edits to dotfiles via git stash
 
 # Relax permissions temporarily so git can work
-sudo ~/.dotfiles/soften.sh ~/.dotfiles;
+sudo sh ~/.dotfiles/soften.sh ~/.dotfiles;
 
 # Stash local edits, pull changes, and re-apply local edits
 pushd ~/.dotfiles;
