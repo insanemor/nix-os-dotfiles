@@ -6,14 +6,16 @@
 {
   imports =
     [ ../../system/hardware-configuration.nix
+      
       ../../system/outros.nix
-      #../../system/hardware/systemd.nix # systemd config
-      #../../system/hardware/kernel.nix # Kernel config
-      #../../system/hardware/power.nix # Power management
-      #../../system/hardware/time.nix # Network time sync
-      #../../system/hardware/opengl.nix
-      #../../system/hardware/printing.nix
-      #../../system/hardware/bluetooth.nix
+      
+      ../../system/hardware/systemd.nix # systemd config
+      ../../system/hardware/kernel.nix # Kernel config
+      ../../system/hardware/power.nix # Power management
+      ../../system/hardware/time.nix # Network time sync
+      ../../system/hardware/opengl.nix
+      ../../system/hardware/printing.nix
+      ../../system/hardware/bluetooth.nix
       #(./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       #../../system/app/flatpak.nix
       #../../system/app/virtualization.nix
@@ -24,7 +26,7 @@
       #../../system/security/firewall.nix
       #../../system/security/firejail.nix
       #../../system/security/openvpn.nix
-      #../../system/security/automount.nix
+      ../../system/security/automount.nix
       #../../system/style/stylix.nix
     ];
 

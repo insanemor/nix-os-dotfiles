@@ -38,10 +38,7 @@
     #media-session.enable = true;
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-
+ 
 
   # Configure console keymap
   console.keyMap = "dvorak";
