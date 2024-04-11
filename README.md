@@ -1,75 +1,121 @@
-# README # nix-os-dotfiles by insanemor
+# NixOS Dotfiles by InsaneMor
 
-## Instalação (Shell Script)
+Este repositório contém configurações para NixOS e Home Manager, ideal para configurar um ambiente de sistema operacional de forma reprodutível e portátil usando o NixOS. As configurações são estruturadas para facilitar a instalação, atualização, e manutenção do sistema.
+
+## Instalação
+
+### Usando Script de Instalação Automática
+
+Execute o script de instalação incluído para configurar rapidamente:
 
 ```bash
 sh ./install.sh
 ```
 
-## Instalar manualmente
+Este script automatiza o processo de instalação do NixOS e do Home Manager e aplica as configurações deste repositório.
 
-Clone o repositório:
+### Instalação Manual
+
+#### Clone o Repositório
+
+Primeiro, clone este repositório na sua pasta `.dotfiles`:
 
 ```bash
 nix-shell -p git --command "git clone git@github.com:insanemor/nix-os-dotfiles.git ~/.dotfiles"
 ```
 
-## Configurar Ambiente
+Este comando utiliza `nix-shell` para instalar temporariamente `git` e clonar o repositório de dotfiles.
 
-Comandos usados:
+## Configuração do Ambiente
+
+Após clonar o repositório, siga estes passos para configurar seu ambiente:
+
+### Gerar Configuração de Hardware
+
+Detecte o hardware e gere a configuração necessária:
 
 ```bash
 sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/system/hardware-configuration.nix
 ```
 
+Este comando cria a configuração de hardware específica para sua máquina.
+
+### Aplicar Configuração do Sistema
+
+Use flakes para aplicar a configuração do sistema:
+
 ```bash
 sudo nixos-rebuild switch --flake ~/.dotfiles#system
 ```
+
+Este comando reconstrói o sistema com as configurações especificadas para o sistema.
+
+### Configurar Home Manager
+
+Configure o ambiente do usuário com o Home Manager:
 
 ```bash
 home-manager switch --flake ~/.dotfiles#user
 ```
 
+Este comando aplica configurações de usuário como temas e configurações de aplicativos.
+
+### Uso de Recursos Experimentais
+
+Se já possuir o Home Manager instalado e quiser usar recursos experimentais:
+
 ```bash
 nix run home-manager/master --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake ~/.dotfiles#user;
 ```
 
-## LImpeza de cache
+Este comando roda o Home Manager do branch `master`, aplicando configurações usando recursos experimentais.
 
-Comando para limpar de uma instalação para outra:
+## Limpeza de Cache
+
+Limpe o cache para liberar espaço após instalações:
 
 ```bash
 sudo nix-collect-garbage -d
 ```
 
+Este comando remove arquivos não utilizados do sistema.
+
 ```bash
 nix-store --optimize
 ```
 
-## Outros comandos
+Este comando otimiza o armazenamento do Nix, consolidando arquivos duplicados.
 
-Para instalar o home-manager e o nixos, basta rodar o comando:
+## Scripts Inclusos
 
-```bash
-nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager
+### `harden.sh`
 
-nix-channel --update
+Reforça as permissões dos arquivos e pastas em `.dotfiles`.
 
-nix-shell '<home-manager>' -A install
-```
+### `install.sh`
 
-### Scripts na rais do projeto
+Instala o NixOS e o Home Manager, aplicando todas as configurações deste repositório.
 
-harden.sh - Usado para recriar as permissões dos arquivos e pastas em .dotfiles
+### `pull.sh`
 
-install.sh - Usado para instalar o nixos e o home-manager e configurar o ambiente
+Atualiza o repositório, chama `harden.sh` para reforçar as permissões, e sincroniza as configurações com `sync.sh`.
 
-pull.sh - Usado para atualizar o repositório no final ele chama o harden.sh e chama o sync.sh
+### `sync.sh`
 
-sync.sh - Usado para aplicar as configurações do nixos e do home-manager e no final ele chama o sync-posthook.sh
+Aplica as configurações do NixOS e Home Manager, finalizando com `sync-posthook.sh`.
 
-sync-posthook.sh - Usado para olhar o LOG e verificar se precisa reiniciar algum app e reinicia ele se precisar
+### `sync-posthook.sh`
 
-update.sh - Usado para atualizar e os pacotes
+Verifica logs para necessidade de reiniciar apps e executa esses reinícios.
 
-upgrade.sh - Usado para atualizar o sistema
+### `update.sh`
+
+Atualiza pacotes do sistema para as últimas versões disponíveis.
+
+### `upgrade.sh`
+
+Atualiza o sistema para a última versão do NixOS disponível nos canais configurados.
+
+## Conclusão
+
+Este repositório proporciona uma maneira flexível e modular de gerenciar configurações de sistema e usuário no NixOS, simplificando o processo de manutenção e atualização do sistema operacional.
