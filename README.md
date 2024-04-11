@@ -1,4 +1,4 @@
-# HELP
+# README # nix-os-dotfiles by insanemor
 
 ## Instalação (Shell Script)
 
