@@ -16,7 +16,6 @@ in
 {
   programs.zsh = {
     enable = true;
-    histSize = "-1";
     autosuggestion.enable = true;
     zsh-autoenv.enable = true;
     syntaxHighlighting.enable = true;
