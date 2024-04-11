@@ -16,22 +16,16 @@ in
 {
   programs.zsh = {
     enable = true;
+    history.size = -1;
     autosuggestion.enable = true;
     zsh-autoenv.enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     shellAliases = myAliases;
     ohMyZsh = {
-        enable = true;
-        theme = "alanpeabody";
-        plugins = [
-          "git"
-          "npm"
-          "history"
-          "node"
-          "rust"
-          "deno"
-         ];
+      enable = true;
+      theme = "alanpeabody";
+      plugins = [ "git" "thefuck" ];
     };
     initExtra = ''
     PROMPT=" ◉ %U%F{magenta}%n%f%u@%U%F{blue}%m%f%u:%F{yellow}%~%f
