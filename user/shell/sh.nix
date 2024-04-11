@@ -36,6 +36,7 @@ in
         "jsontools"
       ];
     };
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     initExtra = ''
     PROMPT=" ◉ %U%F{magenta}%n%f%u@%U%F{blue}%m%f%u:%F{yellow}%~%f
      %F{green}→%f "
@@ -55,7 +56,7 @@ in
     gnugrep gnused
     bat eza bottom fd bc
     direnv nix-direnv
-    powerlevel10k
+    zsh-powerlevel10k
   ];
 
   programs.direnv.enable = true;
