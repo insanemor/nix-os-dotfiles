@@ -25,20 +25,6 @@
     pkgs.waybar
     pkgs.eww
     pkgs.dunst
-<<<<<<< Updated upstream
-    pkgs.libnotify
-    pkgs.hyprpaper
-    pkgs.swaybg
-    pkgs.mpvpaper
-    pkgs.swww
-    pkgs.kitty
-    pkgs.wezterm # testar esse 
-    pkgs.rofi-wayland
-    pkgs.wofi
-    pkgs.bemenu
-    pkgs.fuzzel
-    pkgs.tofi
-=======
     libnotify
     hyprpaper
     swaybg
@@ -51,7 +37,6 @@
     bemenu
     fuzzel
     tofi
->>>>>>> Stashed changes
 
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
@@ -60,24 +45,6 @@
     )
 
   ];
-
-
-<<<<<<< Updated upstream
-  # xdg.portal.enable = true;
-  # xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-=======
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
->>>>>>> Stashed changes
-
-
-
-  # rofi keybind
-<<<<<<< Updated upstream
-  # bind = $mainMod, S, exec, rofi -show drun -show-icons
-=======
-  bind = $mainMod, S, exec, rofi -show drun -show-icons
->>>>>>> Stashed changes
 
 
     

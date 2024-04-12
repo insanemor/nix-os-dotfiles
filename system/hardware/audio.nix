@@ -10,11 +10,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-<<<<<<< Updated upstream
-    jack.enable = true;
-=======
     jack.enable = true
->>>>>>> Stashed changes
   };
 
 }
