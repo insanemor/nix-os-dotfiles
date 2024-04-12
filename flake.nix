@@ -3,7 +3,7 @@
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable,
                      home-manager-unstable, home-manager-stable,
-                     blocklist-hosts, rust-overlay, ... }:
+                     blocklist-hosts, rust-overlay, stylix, ... }:
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
@@ -179,6 +179,8 @@
       url = "github:StevenBlack/hosts";
       flake = false;
     };
+
+    stylix.url = "github:danth/stylix";
 
   };
 }
