@@ -28,18 +28,18 @@
     pkgs.waybar
     pkgs.eww
     pkgs.dunst
-    libnotify
-    hyprpaper
-    swaybg
-    mpvpaper
-    swww
-    kitty
-    wezterm # testar esse 
-    rofi-wayland
-    wofi
-    bemenu
-    fuzzel
-    tofi
+    pkgs.libnotify
+    pkgs.hyprpaper
+    pkgs.swaybg
+    pkgs.mpvpaper
+    pkgs.swww
+    pkgs.kitty
+    pkgs.wezterm # testar esse 
+    pkgs.rofi-wayland
+    pkgs.wofi
+    pkgs.bemenu
+    pkgs.fuzzel
+    pkgs.tofi
 
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
