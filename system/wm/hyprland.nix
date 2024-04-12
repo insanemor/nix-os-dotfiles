@@ -1,16 +1,19 @@
 {pkgs, ...}: 
 
 {
+
+    # Import wayland config
+  imports = [ ./wayland.nix
+
+            ];
   
   programs.hyprland = {
     # Install the packages from nixpkgs
     enable = true;
-<<<<<<< Updated upstream
-    # nvidiaPatches = true;
-=======
-    nvidiaPatches = true;
->>>>>>> Stashed changes
-    xwayland.enable = true;
+    xwayland = {
+      enable = true;
+    };
+    portalPackage = pkgs.xdg-desktop-portal-hyprland;
   };
 
 

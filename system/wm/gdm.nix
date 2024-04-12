@@ -11,9 +11,19 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "br";
-    xkb.variant = "dvorak";
-  };
+    xkb = {
+      layout = "br";
+      variant = "";
+      options = "caps:escape";
+    };
+    displayManager.sddm = {
+      enable = true;
+      wayland.enable = true;
+      enableHidpi = true;
+      theme = "chili";
+      package = pkgs.sddm;
+    };
+
 
 
 
