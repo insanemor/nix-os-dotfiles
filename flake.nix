@@ -121,6 +121,7 @@
             inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
+            inherit (inputs) stylix;
           };
         };
       };
@@ -137,6 +138,7 @@
             inherit systemSettings;
             inherit userSettings;
             inherit (inputs) blocklist-hosts;
+            inherit (inputs) stylix;
           };
         };
       };
