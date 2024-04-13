@@ -26,32 +26,32 @@
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
-        system = "x86_64-linux"; # system arch
-        hostname = "dragon-nbk"; # hostname
-        profile = "personal"; # select a profile defined from my profiles directory
+        system = "x86_64-linux";            # system arch
+        hostname = "dragon-nbk";            # hostname
+        profile = "personal";               # select a profile defined from my profiles directory
         timezone = "America/Sao_Paulo";     # select timezone
-        locale = "pt_BR.UTF-8";    # select locale
-        bootMode = "uefi"; # uefi or bios
-        bootMountPath = "/boot"; # mount path for efi boot partition; only used for uefi boot mode
-        grubDevice = ""; # device identifier for grub; only used for legacy (bios) boot mode
+        locale = "pt_BR.UTF-8";             # select locale
+        bootMode = "uefi";                  # uefi or bios
+        bootMountPath = "/boot";            # mount path for efi boot partition; only used for uefi boot mode
+        grubDevice = "";                    # device identifier for grub; only used for legacy (bios) boot mode
       };
 
       # ----- USER SETTINGS ----- #
       userSettings = rec {
-        username = "ins"; # username
-        name = "Moreira"; # name/identifier
-        email = ""; # email (used for certain configurations)
-        dotfilesDir = "~/.dotfiles"; # absolute path of the local repo
-        theme = "uwunicorn-yt"; # selcted theme from my themes directory (./themes/)
-        wm = "plasma5"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
+        username = "ins";                                             # username
+        name = "Moreira";                                             # name/identifier
+        email = "moreira@zaia.com.br";                                # email (used for certain configurations)
+        dotfilesDir = "~/.dotfiles";                                  # absolute path of the local repo
+        theme = "uwunicorn-yt";                                       # selcted theme from my themes directory (./themes/)
+        wm = "plasma5";                                               # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
         # window manager type (hyprland or x11) translator
         wmType = if (wm == "hyprland") then "wayland" else "x11";
-        browser = "qutebrowser"; # Default browser; must select one from ./user/app/browser/
-        defaultRoamDir = "Personal.p"; # Default org roam directory relative to ~/Org
-        term = "alacritty"; # Default terminal command;
-        font = "Intel One Mono"; # Selected font
-        fontPkg = pkgs.intel-one-mono; # Font package
-        editor = "vim"; # Default editor;
+        browser = "qutebrowser";                                      # Default browser; must select one from ./user/app/browser/
+        defaultRoamDir = "Personal.p";                                # Default org roam directory relative to ~/Org
+        term = "alacritty";                                           # Default terminal command;
+        font = "Intel One Mono";                                      # Selected font
+        fontPkg = pkgs.intel-one-mono;                                # Font package
+        editor = "vim";                                               # Default editor;
         # editor spawning translator
         # generates a command that can be used to spawn editor inside a gui
         # EDITOR and TERM session variables must be set in home.nix or other module
