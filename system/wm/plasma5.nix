@@ -7,7 +7,7 @@ with lib;
   imports = [
     # Choose DE, still under review
 
-    ./plasma5.nix
+    ./x11.nix
     # ./gnome/gnome.nix
     # ./hyperland/hyperland.nix
     # ./kde/kde.nix
