@@ -3,7 +3,8 @@
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable,
                      home-manager-unstable, home-manager-stable,
-                     blocklist-hosts, rust-overlay, stylix, ... }:
+                     blocklist-hosts, rust-overlay, stylix,
+                     plasma-manager, ... }:
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
@@ -114,6 +115,7 @@
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile)
               + "/home.nix") # load home.nix from selected PROFILE
+            inputs.plasma-manager.homeManagerModules.plasma-manager
             #  inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
           ];
           extraSpecialArgs = {
@@ -183,6 +185,12 @@
     };
 
     stylix.url = "github:danth/stylix";
+
+    plasma-manager = {
+      url = "github:pjones/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
 
   };
 }
