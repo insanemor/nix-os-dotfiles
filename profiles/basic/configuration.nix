@@ -37,7 +37,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # Kernel modules
-  #boot.kernelModules = [ "i2c-dev" "i2c-piix4" "cpufreq_powersave" ];
+  boot.kernelModules = [ "i2c-dev" "i2c-piix4" "cpufreq_powersave" "nvidia_uvm" ];
 
   # Bootloader
   # Use systemd-boot if uefi, default to grub otherwise

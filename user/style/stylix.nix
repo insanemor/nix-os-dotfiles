@@ -125,7 +125,7 @@ in
   qt = {
     enable = true;
     style.package = pkgs.libsForQt5.breeze-qt5;
-    style.name = "breeze-dark";
+    style.name = "Breeze";
     platformTheme = "kde";
   };
 }
