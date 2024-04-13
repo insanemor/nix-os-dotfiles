@@ -5,7 +5,7 @@
 { pkgs, lib, systemSettings, userSettings, ... }:
 {
   imports =
-    [ ../../system/hardware-configuration.nix
+    [ ../../machines/default.nix
       ../../system/hardware/audio.nix
       (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       ../../system/hardware/systemd.nix # systemd config
