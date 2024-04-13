@@ -17,3 +17,6 @@ pgrep .waybar-wrapped &> /dev/null && echo "Restarting waybar" && killall .wayba
 pgrep fnott &> /dev/null && echo "Restarting fnott" && killall fnott && echo "Running fnott" && fnott &> /dev/null & disown;
 pgrep Hyprland &> /dev/null && echo "Reapplying background from stylix via swaybg" && echo "Running ~/.swaybg-stylix" && ~/.swaybg-stylix & disown;
 
+# KDE Plasma 5
+pgrep fnott &> /dev/null && echo "Restarting fnott" && killall fnott && echo "Running fnott" && fnott &> /dev/null & disown;
+pgrep plasmashell &> /dev/null && echo "Reloading plasmashell" && kquitapp5 plasmashell && plasmashell &> /dev/null & disown;

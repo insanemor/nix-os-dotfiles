@@ -62,7 +62,7 @@ with lib;
 
           };
         };
-        # theme = "Breeze";
+        theme = "Breeze-dark";
       };
       # defaultSession = "plasmawayland";
     };
