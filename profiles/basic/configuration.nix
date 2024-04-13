@@ -16,7 +16,7 @@
       ../../system/hardware/bluetooth.nix
       ../../system/security/automount.nix
       ../../user/app/vscode/vscode.nix # My git config
-      ../../system/style/stylix.nix
+      #../../system/style/stylix.nix
       
 
     ];
