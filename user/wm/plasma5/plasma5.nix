@@ -37,6 +37,9 @@
               General.launchers = [
                 "applications:org.kde.dolphin.desktop"
                 "applications:org.kde.konsole.desktop"
+                "applications:firefox.desktop"
+                "applications:code.desktop"
+
               ];
             };
           }
@@ -80,7 +83,10 @@
     #
     configFile = {
       "baloofilerc"."Basic Settings"."Indexing-Enabled".value = false;
+      "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize".value = false;
+      "dolphinrc"."KFileDialog Settings"."Places Icons Static Size".value = 22;
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnLeft".value = "SF";
+      "plasmarc"."Wallpapers"."usersWallpapers".value = "/nix/store/0b8nvil8davlhmd2dmy6fkjsgp5plyg6-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Patak/contents/images/1080x1920.png";
       "kwinrc"."Desktops"."Number" = {
         value = 8;
         # Forces kde to not change this value (even through the settings app).
