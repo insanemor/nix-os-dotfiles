@@ -3,6 +3,22 @@
 # to /etc/nixos/configuration.nix instead.
 { config, lib, pkgs, modulesPath, ... }:
 
+#------------------ LENOVO_MT_20RB_BU_SMB_FM_ThinkPad E14 ------------------------
+
+# MODEL             ThinkPad E14 Gen 5 14" Intel 20RBS81L00
+# CPU               Intel Core i7 (10th Gen) 10510U / 1.8 GHz
+# GPU               Intel UHD Graphics
+# RAM               8 GB (1 x 8 GB) DDR4 SDRAM
+# SATA              256 GB SSD M.2 2242 PCIe 3.0 x2 - Western Digital
+# BLUE-TOOTH        Bluetooth 5.0, 802.11a/b/g/n/ac/ax
+# NETWORK           Intel Wi-Fi 6 AX201 (11ax, 2x2)
+# CERTIFIED         Windows 10 Home 64-bit Edition, Fedora, Linux, Ubuntu
+# MOTHERBOARD       Intel SoC (System on Chip) platform
+# SOURCE            [ThinkPad E14 Gen 5 14" Intel]
+#                   (https://www.produtodetalhado.com.br/pn/xvw-lenovo-thinkpad-e14-20rb-5#ficha%20t%C3%A9cnica)
+
+#---------------------------------------------------------------------
+
 {
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
