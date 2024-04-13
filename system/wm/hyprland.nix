@@ -4,6 +4,7 @@
 
     # Import wayland config
   imports = [ ./wayland.nix
+              ./gdm.nix
 
             ];
   

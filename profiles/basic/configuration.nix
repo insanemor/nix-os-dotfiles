@@ -7,8 +7,7 @@
   imports =
     [ ../../system/hardware-configuration.nix
       ../../system/hardware/audio.nix
-      ../../system/wm/gdm.nix
-      ../../system/wm/hyprland.nix
+      (./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
       ../../system/hardware/systemd.nix # systemd config
       # ../../system/hardware/power.nix # Power management conflito com services.power-profiles-daemon.enable = true;
       ../../system/hardware/time.nix # Network time sync
@@ -18,7 +17,7 @@
       ../../system/security/automount.nix
       ../../user/app/vscode/vscode.nix # My git config
       ../../system/style/stylix.nix
-      #(./. + "../../../system/wm"+("/"+userSettings.wm)+".nix") # My window manager
+      
 
     ];
 
