@@ -355,6 +355,29 @@
         "type": "github"
       }
     },
+    "plasma-manager": {
+      "inputs": {
+        "home-manager": [
+          "home-manager-stable"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712907244,
+        "narHash": "sha256-uLNzw3ZRWob9/FfOXUNhlzKNCPWNtWfF4QYoc3Hs1Fw=",
+        "owner": "pjones",
+        "repo": "plasma-manager",
+        "rev": "27014d611e79bba47d5ee12f5790baf121045506",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pjones",
+        "repo": "plasma-manager",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "blocklist-hosts": "blocklist-hosts",
@@ -362,6 +385,7 @@
         "home-manager-unstable": "home-manager-unstable",
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
+        "plasma-manager": "plasma-manager",
         "rust-overlay": "rust-overlay",
         "stylix": "stylix"
       }
