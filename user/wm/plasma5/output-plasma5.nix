@@ -1,4 +1,20 @@
+{ pkgs, plasma-manager, ...}:
+
+let
+  wallpaper-large = builtins.path {
+    path = ./batman-dc.jpg;
+  };
+  wallpaper-small = builtins.path {
+    path = ./batman-logo.jpg;
+  };
+in  
+
 {
+
+  imports = [
+    plasma-manager.homeManagerModules.plasma-manager
+  ];
+
   programs.plasma = {
     enable = true;
     shortcuts = {

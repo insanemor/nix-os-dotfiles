@@ -365,6 +365,29 @@
         ]
       },
       "locked": {
+        "lastModified": 1713085647,
+        "narHash": "sha256-UkY2rK6f5OgwH2pvRQwm9QeueC5C37Nzm+R2/iNjHtU=",
+        "owner": "pjones",
+        "repo": "plasma-manager",
+        "rev": "5af3d8f504d1d63aef73eda65c7a946c3fe3ac7a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pjones",
+        "repo": "plasma-manager",
+        "type": "github"
+      }
+    },
+    "plasma-manager-mcdonc": {
+      "inputs": {
+        "home-manager": [
+          "home-manager-stable"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
         "lastModified": 1690827734,
         "narHash": "sha256-zcNLTSKGZ5zcx0RQkDKH4dN2MBx+KTfrYN7HfmD0N7c=",
         "owner": "mcdonc",
@@ -386,6 +409,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
         "plasma-manager": "plasma-manager",
+        "plasma-manager-mcdonc": "plasma-manager-mcdonc",
         "rust-overlay": "rust-overlay",
         "stylix": "stylix"
       }
