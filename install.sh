@@ -7,8 +7,17 @@
 # using SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 nix-shell -p git --command "git clone git@github.com:insanemor/nix-os-dotfiles.git ~/.dotfiles"
 
+# Passo 1: Ler o nome do modelo do dispositivo
+model_name=$(cat /sys/devices/virtual/dmi/id/product_name)
+# Passo 2: Substituir espaços por hífens se necessário (opcional)
+model_name=${model_name// /-}
+# Passo 3: Definir o diretório de destino
+destination="$HOME/.dotfiles/machines/$model_name"
+# Passo 4: Criar o diretório caso não exista
+mkdir -p "$destination"
 # Generate hardware config for new system
-sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/system/hardware-configuration.nix
+sudo nixos-generate-config --show-hardware-config > "$destination/${model_name}-configuration.nix"
+echo "Configuração de hardware salva em: $destination/${model_name}-configuration.nix"
 
 # Check if uefi or bios
 if [ -d /sys/firmware/efi/efivars ]; then
