@@ -10,6 +10,7 @@
 
   imports = [
               (./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
+              #(./. + "../../../user/wm"+("/"+userSettings.wm)+"/output-plasma5.nix")# My window manager selected from flake
               #stylix.homeManagerModules.stylix
               ../../user/app/git/git.nix # My git config
               ../../user/shell/sh.nix # My zsh and bash config

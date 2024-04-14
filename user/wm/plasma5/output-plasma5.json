@@ -1,20 +1,4 @@
-{ pkgs, plasma-manager, ...}:
-
-let
-  wallpaper-large = builtins.path {
-    path = ./batman-dc.jpg;
-  };
-  wallpaper-small = builtins.path {
-    path = ./batman-logo.jpg;
-  };
-in  
-
 {
-
-  imports = [
-    plasma-manager.homeManagerModules.plasma-manager
-  ];
-
   programs.plasma = {
     enable = true;
     shortcuts = {
@@ -294,10 +278,17 @@ in
       "kglobalshortcutsrc"."org.kde.krunner.desktop"."_k_friendly_name".value = "KRunner";
       "kglobalshortcutsrc"."org.kde.plasma.emojier.desktop"."_k_friendly_name".value = "Seletor de emoji";
       "kglobalshortcutsrc"."org.kde.spectacle.desktop"."_k_friendly_name".value = "Spectacle";
+      "kglobalshortcutsrc"."org/kde/dolphin/desktop"."_k_friendly_name".value = "Dolphin";
+      "kglobalshortcutsrc"."org/kde/konsole/desktop"."_k_friendly_name".value = "Konsole";
+      "kglobalshortcutsrc"."org/kde/krunner/desktop"."_k_friendly_name".value = "KRunner";
+      "kglobalshortcutsrc"."org/kde/plasma/emojier/desktop"."_k_friendly_name".value = "Seletor de emoji";
+      "kglobalshortcutsrc"."org/kde/spectacle/desktop"."_k_friendly_name".value = "Spectacle";
       "kglobalshortcutsrc"."org_kde_powerdevil"."_k_friendly_name".value = "Gerenciamento de energia";
       "kglobalshortcutsrc"."plasma-manager-commands.desktop"."_k_friendly_name".value = "Plasma Manager";
+      "kglobalshortcutsrc"."plasma-manager-commands/desktop"."_k_friendly_name".value = "Plasma Manager";
       "kglobalshortcutsrc"."plasmashell"."_k_friendly_name".value = "Plasma";
       "kglobalshortcutsrc"."systemsettings.desktop"."_k_friendly_name".value = "Configurações do sistema";
+      "kglobalshortcutsrc"."systemsettings/desktop"."_k_friendly_name".value = "Configurações do sistema";
       "khotkeysrc"."Data"."DataCount".value = 3;
       "khotkeysrc"."Data_1"."Comment".value = "KMenuEdit Global Shortcuts";
       "khotkeysrc"."Data_1"."DataCount".value = 1;
@@ -781,29 +772,45 @@ in
       "khotkeysrc"."Data_3_9Triggers0"."GesturePointData".value = "0,0.0625,-0.5,0.5,1,0.0625,0.0625,-0.5,0.5,0.875,0.125,0.0625,-0.5,0.5,0.75,0.1875,0.0625,-0.5,0.5,0.625,0.25,0.0625,-0.5,0.5,0.5,0.3125,0.0625,-0.5,0.5,0.375,0.375,0.0625,-0.5,0.5,0.25,0.4375,0.0625,-0.5,0.5,0.125,0.5,0.0625,0.5,0.5,0,0.5625,0.0625,0.5,0.5,0.125,0.625,0.0625,0.5,0.5,0.25,0.6875,0.0625,0.5,0.5,0.375,0.75,0.0625,0.5,0.5,0.5,0.8125,0.0625,0.5,0.5,0.625,0.875,0.0625,0.5,0.5,0.75,0.9375,0.0625,0.5,0.5,0.875,1,0,0,0.5,1";
       "khotkeysrc"."Data_3_9Triggers0"."Type".value = "GESTURE";
       "khotkeysrc"."General"."AllowKDEAppsToRememberWindowPositions[$d]".value = "";
+      "khotkeysrc"."General"."AllowKDEAppsToRememberWindowPositions\x5b$d\x5d".value = "";
       "khotkeysrc"."General"."ColorSchemeHash[$d]".value = "";
+      "khotkeysrc"."General"."ColorSchemeHash\x5b$d\x5d".value = "";
       "khotkeysrc"."General"."ColorScheme[$d]".value = "";
+      "khotkeysrc"."General"."ColorScheme\x5b$d\x5d".value = "";
       "khotkeysrc"."General"."Name[$d]".value = "";
+      "khotkeysrc"."General"."Name\x5b$d\x5d".value = "";
       "khotkeysrc"."General"."shadeSortColumn[$d]".value = "";
+      "khotkeysrc"."General"."shadeSortColumn\x5b$d\x5d".value = "";
       "khotkeysrc"."Gestures"."Disabled".value = true;
       "khotkeysrc"."Gestures"."MouseButton".value = 2;
       "khotkeysrc"."Gestures"."Timeout".value = 300;
       "khotkeysrc"."GesturesExclude"."Comment".value = "";
       "khotkeysrc"."GesturesExclude"."WindowsCount".value = 0;
       "khotkeysrc"."Icons"."Theme[$d]".value = "";
+      "khotkeysrc"."Icons"."Theme\x5b$d\x5d".value = "";
       "khotkeysrc"."KDE"."LookAndFeelPackage[$d]".value = "";
+      "khotkeysrc"."KDE"."LookAndFeelPackage\x5b$d\x5d".value = "";
       "khotkeysrc"."KDE"."SingleClick[$d]".value = "";
+      "khotkeysrc"."KDE"."SingleClick\x5b$d\x5d".value = "";
       "khotkeysrc"."KDE"."contrast[$d]".value = "";
+      "khotkeysrc"."KDE"."contrast\x5b$d\x5d".value = "";
       "khotkeysrc"."KDE"."widgetStyle[$d]".value = "";
+      "khotkeysrc"."KDE"."widgetStyle\x5b$d\x5d".value = "";
       "khotkeysrc"."Main"."AlreadyImported".value = "defaults,kde32b1,konqueror_gestures_kde321";
       "khotkeysrc"."Main"."Disabled".value = false;
       "khotkeysrc"."Voice"."Shortcut".value = "";
       "khotkeysrc"."WM"."activeBackground[$d]".value = "";
+      "khotkeysrc"."WM"."activeBackground\x5b$d\x5d".value = "";
       "khotkeysrc"."WM"."activeBlend[$d]".value = "";
+      "khotkeysrc"."WM"."activeBlend\x5b$d\x5d".value = "";
       "khotkeysrc"."WM"."activeForeground[$d]".value = "";
+      "khotkeysrc"."WM"."activeForeground\x5b$d\x5d".value = "";
       "khotkeysrc"."WM"."inactiveBackground[$d]".value = "";
+      "khotkeysrc"."WM"."inactiveBackground\x5b$d\x5d".value = "";
       "khotkeysrc"."WM"."inactiveBlend[$d]".value = "";
+      "khotkeysrc"."WM"."inactiveBlend\x5b$d\x5d".value = "";
       "khotkeysrc"."WM"."inactiveForeground[$d]".value = "";
+      "khotkeysrc"."WM"."inactiveForeground\x5b$d\x5d".value = "";
       "kwalletrc"."Wallet"."First Use".value = false;
       "kwinrc"."Desktops"."Id_1".value = "2c773c7e-0dec-4a2f-89e5-a67800856195";
       "kwinrc"."Desktops"."Id_2".value = "5b3819d0-1fac-4ec3-9342-872fb249a265";
@@ -820,10 +827,11 @@ in
       "kwinrc"."Tiling/3e6a13d3-7d29-5922-82c3-84e8bdf10429"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnLeft".value = "SF";
       "kwinrc"."org/kde/kdecoration2"."ButtonsOnLeft".value = "SF";
-      "kxkbrc"."Layout"."LayoutList".value = "br";
+      "kxkbrc"."Layout"."DisplayNames".value = ",";
+      "kxkbrc"."Layout"."LayoutList".value = "br,us";
       "kxkbrc"."Layout"."Model".value = "thinkpad60";
       "kxkbrc"."Layout"."Use".value = true;
-      "kxkbrc"."Layout"."VariantList".value = "thinkpad";
+      "kxkbrc"."Layout"."VariantList".value = "thinkpad,";
       "plasma-localerc"."Formats"."LANG".value = "pt_BR.UTF-8";
       "plasmarc"."Wallpapers"."usersWallpapers".value = "/nix/store/0b8nvil8davlhmd2dmy6fkjsgp5plyg6-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Patak/contents/images/1080x1920.png";
     };
