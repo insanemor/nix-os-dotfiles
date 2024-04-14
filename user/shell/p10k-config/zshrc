@@ -1,0 +1,110 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/ins/.oh-my-zsh"
+
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="alanpeabody"
+
+plugins=(
+    git
+    history-substring-search
+    colored-man-pages
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    sudo
+    web-search
+    copyfile
+    copybuffer
+    dirhistory
+    jsontools
+)
+
+source $ZSH/oh-my-zsh.sh
+source /home/ins/.oh-my-zsh/custom/themes/powerlevel10k
+source /home/ins/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Usaado somentee em maquiinas fisicas com linux 
+#setxkbmap -model pc104 -layout us_intl
+
+######################################################################################################################################### alias personalizados
+
+## apps abreviados
+alias ls="ls -la"
+alias k="kubectl"
+alias tf="terraform"
+alias awsp="source _awsp"
+alias tg="terragrunt"
+alias pd="podman"
+alias py="python"
+
+## export krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+
+## export snap 
+export PATH="/snap/bin:$PATH"
+
+
+##############################################################################################################   app instalados
+
+# fdfind conf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fdfind --type f'
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height=80%"
+
+
+# asdf command
+. "$HOME/.asdf/asdf.sh"
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
+
+# Invert o terminal para ficar sempre para baixo 
+print ${(pl:$LINES::\n:):-}
+
+
+# Welcome terminal 
+fastfetch --load-config dr460nized
+
+
+# find de commando to install 
+source /usr/share/doc/find-the-command/ftc.zsh
+
+##########################################################################################################################################
+ 
+# Source para apis keys 
+source "/home/ins/dados/onedrive/Documentos/00001/SB/ramses/.api-core-simbioit.sh"
+
+
+##########################################################################################################################################
+
+
+# podman run -it --rm --net host --memory 1024mb --userns=keep-id -u $UID:$UID -v /home/ins/Applications/cli/conf-clientes/00001/FS/GIT:/work --name tools_FS insanemor/tools:3.6
+
+
+
+
+# TOOLS contained all ferramentas.
+alias ins-FS='docker run -it --rm --net host --memory 1024mb --userns=keep-id -u $UID:$UID -v /home/ins/Applications/cli/conf-clientes/00001/FS/contained/aws:/home/ins/.aws -v /home/ins/Applications/cli/conf-clientes/00001/FS/contained/ssh:/home/ins/.ssh -v /home/ins/Applications/cli/conf-clientes/00001/FS/contained/kube:/home/ins/.kube -v /home/ins/Applications/cli/conf-clientes/00001/FS/contained/gcloud:/home/ins/.config/gcloud -v /home/ins/Applications/cli/conf-clientes/00001/FS/contained/openvpn:/home/ins/openvpn -v /home/ins/Applications/cli/conf-clientes/00001/FS/confs/helps:/home/ins/helps -v /home/ins/Applications/cli/conf-clientes/00001/FS/confs/confs/gitconfig:/home/ins/.gitconfig -v /home/ins/Applications/cli/conf-clientes/00001/FS/confs/confs/tool-versions:/home/ins/.tool-versions -v /home/ins/Applications/cli/conf-clientes/00001/FS/confs/confs/git-credentials:/home/ins/.git-credentials -v /home/ins/Applications/cli/conf-clientes/00001/FS/confs/confs/zsh_aliases:/home/ins/.zsh_aliases -v /home/ins/Applications/cli/conf-clientes/00001/GLOBAL/confs/confs/zsh_extend:/home/ins/.zsh_extend -v /home/ins/Applications/cli/conf-clientes/00001/GLOBAL/confs/confs/zsh_aliases_global:/home/ins/.zsh_aliases_global -v /home/ins/Applications/cli/conf-clientes/00001/GLOBAL/confs/history/zsh_history:/home/ins/.zsh_history -v /home/ins/Applications/cli/conf-clientes/00001/FS/GIT:/work --name tools_FS_$(shuf -i 100000-999999 -n 1) insanemor/tools:3.6'
+
+
+#### Simbio IT - Ramses Core - V1 ####
+export WORKON_HOME=/home/ins/venvs
+export PROJECT_HOME=/home/ins/projects
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#source /usr/local/bin/virtualenvwrapper.sh
