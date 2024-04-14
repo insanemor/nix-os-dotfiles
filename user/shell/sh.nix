@@ -59,7 +59,7 @@ in
     
     oh-my-zsh = {
       enable = true;
-      theme = "powerlevel10k/powerlevel10k";
+      theme = "alanpeabody";
       plugins = [ 
         "git" 
         "history-substring-search"
