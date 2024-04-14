@@ -142,6 +142,7 @@
             inherit systemSettings;
             inherit userSettings;
             inherit (inputs) stylix;
+            inherit plasma-manager;
           };
         };
       };
@@ -206,7 +207,7 @@
     stylix.url = "github:danth/stylix";
 
     plasma-manager = {
-      url = "github:pjones/plasma-manager";
+      url = "github:mcdonc/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager-stable";
     };
