@@ -26,8 +26,8 @@ in
     historySubstringSearch.enable = true;
     
     history = {
-      size = -1;
-      save = -1;
+      size = 999999;
+      save = 999999;
       share = true;
       expireDuplicatesFirst = true;
       ignoreDups = true;

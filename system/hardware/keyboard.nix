@@ -4,12 +4,14 @@
   services.xserver = {
     autoRepeatDelay = 600;
     autoRepeatInterval = 25;
-    layout = "br";
+    
     xkb = {
-        Variant = "thinkpad";
-        xkbModel = "thinkpadz60";
+      layout = "br";
+      variant = "thinkpad";
+      model = "thinkpadz60";
     };
   };
 
   console.useXkbConfig = true;
+  #console.keyMap = "br";
 }
