@@ -15,10 +15,6 @@ let
 in
 {
 
-  # imports = [
-  #   ./p10k.nix
-  # ];
-
   programs.zsh = {
     enable = true;
     shellAliases = myAliases;
