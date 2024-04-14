@@ -804,11 +804,10 @@
       "kwinrc"."Tiling/3e6a13d3-7d29-5922-82c3-84e8bdf10429"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnLeft".value = "SF";
       "kwinrc"."org/kde/kdecoration2"."ButtonsOnLeft".value = "SF";
-      "kxkbrc"."Layout"."DisplayNames".value = ",";
-      "kxkbrc"."Layout"."LayoutList".value = "br,us";
+      "kxkbrc"."Layout"."LayoutList".value = "br";
       "kxkbrc"."Layout"."Model".value = "thinkpad60";
       "kxkbrc"."Layout"."Use".value = true;
-      "kxkbrc"."Layout"."VariantList".value = "thinkpad,";
+      "kxkbrc"."Layout"."VariantList".value = "thinkpad";
       "plasma-localerc"."Formats"."LANG".value = "pt_BR.UTF-8";
       "plasmarc"."Wallpapers"."usersWallpapers".value = "/nix/store/0b8nvil8davlhmd2dmy6fkjsgp5plyg6-plasma-workspace-wallpapers-5.27.10/share/wallpapers/Patak/contents/images/1080x1920.png";
     };
