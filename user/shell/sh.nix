@@ -22,13 +22,20 @@ in
     enableCompletion = true;
     autosuggestion.enable = true;
 
-    history.size = 10000;
-    history.save = 10000;
-    history.expireDuplicatesFirst = true;
-    history.ignoreDups = true;
-    history.ignoreSpace = true;
+
     historySubstringSearch.enable = true;
     
+    history = {
+      size = 10000;
+      save = 10000;
+      share = true;
+      expireDuplicatesFirst = true;
+      ignoreDups = true;
+      ignoreSpace = true;
+      path = "${config.xdg.dataHome}/zsh/history";
+    
+    };
+
     syntaxHighlighting.enable = true;
 
     plugins = [
