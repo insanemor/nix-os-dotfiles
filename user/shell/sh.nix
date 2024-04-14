@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 let
 
   # My shell aliases
@@ -15,25 +15,51 @@ let
 in
 {
 
-  imports = [
-    ./p10k.nix
-  ];
+  # imports = [
+  #   ./p10k.nix
+  # ];
 
   programs.zsh = {
     enable = true;
+    shellAliases = myAliases;
+
+    enableCompletion = true;
+    autosuggestion.enable = true;
+
     history.size = 10000;
     history.save = 10000;
     history.expireDuplicatesFirst = true;
     history.ignoreDups = true;
     history.ignoreSpace = true;
     historySubstringSearch.enable = true;
-    autosuggestion.enable = true;
+    
     syntaxHighlighting.enable = true;
-    enableCompletion = true;
-    shellAliases = myAliases;
+
+    plugins = [
+        {
+          name = "powerlevel10k-config";
+          src = lib.cleanSource ./p10k-config;
+          file = "p10k.zsh";
+        }
+    ];
+
+    zplug = {
+      enable = true;
+      plugins = [
+        { 
+          name = "zsh-users/zsh-autosuggestions"; 
+        } 
+        { 
+          name = "romkatv/powerlevel10k"; 
+          tags = [ as:theme depth:1 ]; 
+        }
+
+      ];
+    };
+    
     oh-my-zsh = {
       enable = true;
-      theme = "alanpeabody";
+      theme = "powerlevel10k/powerlevel10k";
       plugins = [ 
         "git" 
         "history-substring-search"
@@ -46,8 +72,12 @@ in
         "jsontools"
       ];
     };
+
     initExtra = ''
-    
+      bindkey "^[[1;5D" backward-word
+      bindkey "^[[1;5C" forward-word
+
+      ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
     '';
   };

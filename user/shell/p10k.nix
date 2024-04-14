@@ -7,7 +7,6 @@
   cfg = config.programs.p10k;
   zsh = config.programs.zsh.enable;
 in {
-  _file = ./p10k.nix;
 
   options = {
     programs.p10k.enable = lib.mkEnableOption "p10k";
