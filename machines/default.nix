@@ -28,7 +28,7 @@ in
     # call attribute thats declared above
     # ---------------------------------------------
     #importfile 
-    ./LAPTOPS/ThinkPadE14/ThinkPadE14-configuration.nix  # bug nao consegui fazer funcionar a funcao de cima 
+    ./LAPTOPS/20RBS81L00/20RBS81L00-configuration.nix  # bug nao consegui fazer funcionar a funcao de cima 
   ];
 
 }
