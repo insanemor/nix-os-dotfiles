@@ -4,15 +4,23 @@
 
 
   # Configure keymap in X11
-  services.xserver = {
-    enable = true;
-    desktopManager.gnome.enable = true;
-    displayManager.sddm = {
+  services = {
+    xserver = {
       enable = true;
-      wayland.enable = true;
-      enableHidpi = true;
-      theme = "chili";
-      package = pkgs.sddm;
+      desktopManager = {
+        gnome.enable = true;
+      };
+    };
+       
+    
+    displayManager = {
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+        enableHidpi = true;
+        theme = "chili";
+        package = pkgs.sddm;
+      };
     };
 
 
