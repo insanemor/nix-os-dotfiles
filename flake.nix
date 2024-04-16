@@ -69,7 +69,7 @@
 
       # create patched nixpkgs
       nixpkgs-patched =
-        (import nixpkgs { system = systemSettings.system; }).applyPatches {
+        (import inputs.nixpkgs { system = systemSettings.system; }).applyPatches {
           name = "nixpkgs-patched";
           src = nixpkgs;
           patches = [ ];
