@@ -6,7 +6,7 @@ let
   # Terminal:   cat /sys/devices/virtual/dmi/id/product_name
   #---------------------------------------------------------------------
   importfile = ( if builtins.readFile "/sys/devices/virtual/dmi/id/product_name" == "20RBS81L00\n" then
-    ./LAPTOPS/ThinkPadE14/ThinkPadE14-configuration.nix
+    ./LAPTOPS/20RBS81L00/20RBS81L00-configuration.nix
 
     else if builtins.readFile "/sys/devices/virtual/dmi/id/product_name" == "VirtualBox\n" then
       ./VBOX/001/001-configuration.nix
