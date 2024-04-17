@@ -6,7 +6,7 @@
   imports = 
     [ 
       ./brave.nix
-      #./qutebrowser.nix
+      ./qutebrowser.nix
       #./qute-containers.nix
     ];
 
