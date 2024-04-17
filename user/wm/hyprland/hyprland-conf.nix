@@ -74,6 +74,22 @@
       # ----------------------------------------------------- 
       source = ~/.dotfiles/user/wm/hyprland/confs/custom.conf
 
+
+
+      $scratchpadsize = size 80% 85%
+
+      $scratchpad = class:^(scratchpad)$
+
+      $pavucontrol = class:^(pavucontrol)$
+
+      $miniframe = title:\*Minibuf.*
+
+      xwayland {
+        force_zero_scaling = true
+      }
+
+
+
       # -----------------------------------------------------
     '';
     xwayland = { enable = true; };
