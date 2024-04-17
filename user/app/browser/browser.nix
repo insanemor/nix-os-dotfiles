@@ -5,9 +5,9 @@
 
   imports = 
     [ 
-      ./brave.nix
-      ./qutebrowser.nix
-      ./qute-containers.nix
+      #./brave.nix
+      #./qutebrowser.nix
+      #./qute-containers.nix
     ];
 
 }
