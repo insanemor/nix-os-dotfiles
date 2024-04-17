@@ -22,7 +22,8 @@
         modules-left = 
         [ 
           "custom/os" 
-          "custom/hyprprofile" 
+          "custom/hyprprofile"
+          "custom/appmenu" 
           "battery" "backlight" 
           "keyboard-state" 
           "pulseaudio" 
@@ -41,6 +42,15 @@
           "tray" 
           "clock" 
         ];
+
+        #############################################
+
+        "custom/appmenu" = {
+          "format" = "Apps";
+          "on-click": "sleep 0.2;rofi -show drun -replace",
+          "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+          "tooltip": false
+        };
 
         "custom/os" = {
           "format" = " {} ";
