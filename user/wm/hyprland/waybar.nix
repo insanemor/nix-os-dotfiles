@@ -19,9 +19,28 @@
         margin = "7 7 3 7";
         spacing = 2;
 
-        modules-left = [ "custom/os" "custom/hyprprofile" "battery" "backlight" "keyboard-state" "pulseaudio" "cpu" "memory" ];
-        modules-center = [ "hyprland/workspaces" ];
-        modules-right = [ "idle_inhibitor" "tray" "clock" ];
+        modules-left = 
+        [ 
+          "custom/os" 
+          "custom/hyprprofile" 
+          "battery" "backlight" 
+          "keyboard-state" 
+          "pulseaudio" 
+          "cpu" 
+          "memory" 
+        ];
+
+        modules-center = 
+        [ 
+          "hyprland/workspaces" 
+        ];
+
+        modules-right = 
+        [ 
+          "idle_inhibitor" 
+          "tray" 
+          "clock" 
+        ];
 
         "custom/os" = {
           "format" = " {} ";
