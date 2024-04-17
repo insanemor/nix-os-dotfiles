@@ -53,6 +53,7 @@
           "on-click-right" = "~/.dotfiles/user/wm/hyprland/scripts/keybindings.sh";
           "tooltip" = false;
         };
+
         "wlr/taskbar" = {
           "format" = "{icon}";
           "icon-size" = 18;
@@ -69,18 +70,21 @@
               "Firefox Web Browser" = "Firefox"
               "Foot Server" = "Terminal"
           };
-        },
+        };
+
         "custom/os" = {
           "format" = " {} ";
           "exec" = ''echo "" '';
           "interval" = "once";
         };
+
         "custom/hyprprofile" = {
           "format" = "   {}";
           "exec" = ''cat ~/.hyprprofile'';
           "interval" = 3;
           "on-click" = "hyprprofile-dmenu";
         };
+
         "keyboard-state" = {
           "numlock" = true;
           "format" = " {icon} ";
@@ -89,6 +93,7 @@
             "unlocked" = "󱧓";
           };
         };
+        
         "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
