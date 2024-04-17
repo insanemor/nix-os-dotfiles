@@ -6,8 +6,8 @@
   imports = 
     [ 
       ./brave.nix
-      ./qutebrowser.nix
-      #./qute-containers.nix
+      #./qutebrowser.nix
+      ./qute-containers.nix
     ];
 
 }
