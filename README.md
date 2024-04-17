@@ -8,11 +8,12 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] script do keybinding.sh que carrega os atalhos das teclas configuradas
 - [ ] erro quando click no menu de aplicativos minimizados
 - [ ] history dos comandos nao esta legal , vem primeiro sugestao ao inves de historico de comandos
-- [ ] teclado do notbook ainda nao ta legal
+- [X] teclado do notbook ainda nao ta legal
 - [ ] erro quando muda de perfil nao abre legal o navegador ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
 
 ## Features a serem implantas
 
+- [ ] add atalhos para os scripts desse repo
 - [ ] implantar profile para terminal e navegar e container 
 - [ ] adicionar historico de copy e past 
 - [ ] perfil devops
