@@ -17,6 +17,7 @@
     portalPackage = pkgs.xdg-desktop-portal-hyprland;
   };
 
+  services.gnome.gnome-keyring.enable = true;
 
   # environment.sessionVariables = {
   #   #If your cursor becomes invisible
@@ -25,22 +26,23 @@
   #   NIXOS_OZONE_WL = "1";
   # };
 
-  environment.systemPackages = [
-    pkgs.waybar
-    pkgs.eww
-    pkgs.dunst
-    pkgs.libnotify
-    pkgs.hyprpaper
-    pkgs.swaybg
-    pkgs.mpvpaper
-    pkgs.swww
-    pkgs.kitty
-    pkgs.wezterm # testar esse 
-    pkgs.rofi-wayland
-    pkgs.wofi
-    pkgs.bemenu
-    pkgs.fuzzel
-    pkgs.tofi
+  environment.systemPackages = (with pkgs; [
+    waybar
+    eww
+    dunst
+    libnotify
+    hyprpaper
+    swaybg
+    mpvpaper
+    swww
+    kitty
+    alacritty
+    wezterm # testar esse 
+    rofi-wayland
+    wofi
+    bemenu
+    fuzzel
+    tofi
 
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
@@ -48,7 +50,7 @@
       })
     )
 
-  ];
+  ]);
 
 
     

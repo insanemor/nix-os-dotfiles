@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-kdenlive, nix-doom-emacs, stylix, userSettings, ... }:
+{ config, pkgs, pkgs-kdenlive, userSettings, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -11,7 +11,6 @@
   imports = [
               (./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
               #(./. + "../../../user/wm"+("/"+userSettings.wm)+"/output-plasma5.nix")# My window manager selected from flake
-              #stylix.homeManagerModules.stylix
               ../../user/app/git/git.nix # My git config
               ../../user/shell/sh.nix # My zsh and bash config
               ../../user/style/stylix.nix # Styling and themes for my apps

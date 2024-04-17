@@ -19,10 +19,7 @@
   #---------------------------------------------------------------------
   description = "Flake of Insan&moR";
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-stable,
-                     home-manager-unstable, home-manager-stable,
-                     blocklist-hosts, rust-overlay, stylix,
-                     plasma-manager, ... }:
+  outputs = inputs@{ self, ... }:
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
@@ -71,7 +68,7 @@
       nixpkgs-patched =
         (import inputs.nixpkgs { system = systemSettings.system; }).applyPatches {
           name = "nixpkgs-patched";
-          src = nixpkgs;
+          src = inputs.nixpkgs;
           patches = [ ];
         };
 
@@ -88,10 +85,10 @@
                     allowUnfree = true;
                     allowUnfreePredicate = (_: true);
                   };
-                  overlays = [ rust-overlay.overlays.default ];
+                  overlays = [ inputs.rust-overlay.overlays.default ];
                 }));
 
-      pkgs-stable = import nixpkgs-stable {
+      pkgs-stable = import inputs.nixpkgs-stable {
         system = systemSettings.system;
         config = {
           allowUnfree = true;
@@ -104,17 +101,17 @@
       # otherwise use patched nixos-unstable nixpkgs
       lib = (if ((systemSettings.profile == "homelab") || (systemSettings.profile == "worklab"))
              then
-               nixpkgs-stable.lib
+               inputs.nixpkgs-stable.lib
              else
-               nixpkgs.lib);
+               inputs.nixpkgs.lib);
 
       # use home-manager-stable if running a server (homelab or worklab profile)
       # otherwise use home-manager-unstable
       home-manager = (if ((systemSettings.profile == "homelab") || (systemSettings.profile == "worklab"))
              then
-               home-manager-stable
+               inputs.home-manager-stable
              else
-               home-manager-unstable);
+               inputs.home-manager-unstable);
 
       # Systems that can run tests:
       supportedSystems = [ "aarch64-linux" "i686-linux" "x86_64-linux" ];
@@ -133,17 +130,16 @@
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile)
               + "/home.nix") # load home.nix from selected PROFILE
-            inputs.plasma-manager.homeManagerModules.plasma-manager
-            #inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
-            #  inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
+            # inputs.plasma-manager.homeManagerModules.plasma-manager
+            # inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
+            # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
           ];
           extraSpecialArgs = {
             # pass config variables from above
             inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
-            inherit (inputs) stylix;
-            inherit plasma-manager;
+            inherit inputs;
           };
         };
       };
@@ -159,8 +155,7 @@
             inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
-            inherit (inputs) blocklist-hosts;
-            inherit (inputs) stylix;
+            inherit inputs;
           };
         };
       };
