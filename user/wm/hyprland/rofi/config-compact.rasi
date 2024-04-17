@@ -24,20 +24,18 @@ configuration {
     me-accept-entry:            "MousePrimary";
     drun-display-format:        "{name}";
     window-format:              "{w} · {c} · {t}";
+    font:                       "Fira Sans 11"; 
+    border-width:               3px;
     
 }
 
-/* ---- Load font ---- */
-@import "~/dotfiles/.settings/rofi-font.rasi"
 
-/* ---- Load pywal colors (custom wal template) ---- */
-@import "~/.cache/wal/colors-rofi-pywal"
+
 
 /* ---- Load wallpaper ---- */
-@import "~/.cache/current_wallpaper.rasi"
+/* @import "~/.cache/current_wallpaper.rasi"
 
-/* ---- Load border width ---- */
-@import "~/dotfiles/.settings/rofi-border.rasi"
+
 
 /* ---- Window ---- */
 window {
