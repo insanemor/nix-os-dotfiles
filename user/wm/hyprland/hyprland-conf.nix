@@ -47,7 +47,7 @@
       # ----------------------------------------------------- 
       # Keyboard
       # ----------------------------------------------------- 
-      source = ~/.dotfiles/user/wm/hyprland/confs/keyboard.conf
+      #source = ~/.dotfiles/user/wm/hyprland/confs/keyboard.conf
 
       # ----------------------------------------------------- 
       # Load pywal color file
@@ -73,8 +73,6 @@
       # Custom
       # ----------------------------------------------------- 
       source = ~/.dotfiles/user/wm/hyprland/confs/custom.conf
-
-
 
       
       xwayland {
