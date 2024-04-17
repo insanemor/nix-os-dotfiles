@@ -7,6 +7,8 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] script que indentifica a maquina e carrega a configuração correta de hardware
 - [ ] script do keybinding.sh que carrega os atalhos das teclas configuradas
 - [ ] erro quando click no menu de aplicativos minimizados
+- [ ] history dos comandos nao esta legal , vem primeiro sugestao ao inves de historico de comandos
+- [ ] teclado do notbook ainda nao ta legal
 
 ## Features a serem implantas
 
