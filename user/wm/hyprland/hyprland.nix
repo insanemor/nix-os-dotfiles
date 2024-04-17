@@ -273,7 +273,7 @@
 
   home.packages = with pkgs; [
     alacritty
-    rangers
+    ranger
     kitty
     feh
     killall
