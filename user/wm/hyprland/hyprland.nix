@@ -454,7 +454,7 @@
 
     label {
       monitor =
-      text = Hello, Emmet
+      text = Hello, Ins@nemoR
       color = rgba(200, 200, 200, 1.0)
       font_size = 25
       font_family = Intel One Mono
