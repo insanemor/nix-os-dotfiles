@@ -1,7 +1,8 @@
 { config, lib, pkgs, userSettings, systemSettings, ... }:
 
 {
-  imports = [
+  imports = 
+  [
     ../input/nihongo.nix
     ./hyprland-conf.nix
     ./hypridle.nix

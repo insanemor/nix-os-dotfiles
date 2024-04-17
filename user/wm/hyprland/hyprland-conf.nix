@@ -27,52 +27,52 @@
       # ----------------------------------------------------- 
       # Monitor
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/monitors.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/monitors.conf
 
       # ----------------------------------------------------- 
       # Autostart
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/autostart.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/autostart.conf
 
       # ----------------------------------------------------- 
       # Cursor
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/cursor.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/cursor.conf
 
       # ----------------------------------------------------- 
       # Environment
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/environment.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/environment.conf
 
       # ----------------------------------------------------- 
       # Keyboard
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/keyboard.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/keyboard.conf
 
       # ----------------------------------------------------- 
       # Load pywal color file
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/colors-hyprland.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/colors-hyprland.conf
 
       # ----------------------------------------------------- 
       # Load configuration files
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/window.conf
-      source = ~/dotfiles/user/wm/hyprland/conf/decoration.conf
-      source = ~/dotfiles/user/wm/hyprland/conf/layout.conf
-      source = ~/dotfiles/user/wm/hyprland/conf/misc.conf
-      source = ~/dotfiles/user/wm/hyprland/conf/keybinding.conf
-      source = ~/dotfiles/user/wm/hyprland/conf/windowrule.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/window.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/decoration.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/layout.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/misc.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/keybinding.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/windowrule.conf
 
       # ----------------------------------------------------- 
       # Animation
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/animation.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/animation.conf
 
       # ----------------------------------------------------- 
       # Custom
       # ----------------------------------------------------- 
-      source = ~/dotfiles/user/wm/hyprland/conf/custom.conf
+      source = ~/.dotfiles/user/wm/hyprland/conf/custom.conf
 
       # -----------------------------------------------------
     '';
