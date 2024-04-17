@@ -16,6 +16,14 @@
           "command": "kitty --class scratchpad -e ranger",
           "margin": 50
         },
+        "code": {
+          "command": "code",
+          "margin": 50
+        },
+        "firefox": {
+          "command": "firefox",
+          "margin": 50
+        },
         "musikcube": {
           "command": "alacritty --class scratchpad -e musikcube",
           "margin": 50
