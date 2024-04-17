@@ -11,12 +11,12 @@ let
     neofetch = "disfetch";
     fetch = "disfetch";
     gitfetch = "onefetch";
-
     nsoften = "sudo sh ~/.dotfiles/soften.sh";
     nsync = "sh ~/.dotfiles/sync.sh";
     npull = "sh ~/.dotfiles/pull.sh";
     update = "~/.dotfiles/update.sh";
     upgrade = "~/.dotfiles/upgrade.sh";
+    garbage = "sudo nix-collect-garbage -d";
 
   };
 in
