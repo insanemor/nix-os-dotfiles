@@ -60,16 +60,6 @@
           "tooltip-format" = "{title}";
           "on-click" = "activate";
           "on-click-middle" = "close";
-          "ignore-list" = [
-            "Alacritty"
-          ];
-          "app_ids-mapping" = {
-              "firefoxdeveloperedition" = "firefox-developer-edition"
-          };
-          "rewrite" = {
-              "Firefox Web Browser" = "Firefox"
-              "Foot Server" = "Terminal"
-          };
         };
 
         "custom/os" = {
@@ -93,7 +83,7 @@
             "unlocked" = "󱧓";
           };
         };
-        
+
         "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
