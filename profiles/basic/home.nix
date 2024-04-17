@@ -13,7 +13,8 @@
               ../../user/app/git/git.nix # My git config
               ../../user/shell/sh.nix # My zsh and bash config
               ../../user/style/stylix.nix # Styling and themes for my apps
-              ../../user/app/browser/browser.nix # My browser config
+              ../../user/app/browser/qutebrowser.nix # My browser config
+              ../../user/app/browser/brave.nix 
               #../../user/shell/cli-collection.nix # Useful CLI apps
               #../../user/app/ranger/ranger.nix # My ranger file manager config
               #../../user/app/virtualization/virtualization.nix # Virtual machines

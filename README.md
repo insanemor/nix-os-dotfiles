@@ -10,6 +10,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 
 ## Features a serem implantas
 
+- [ ] adicionar historico de copy e past 
 - [ ] perfil devops
 - [ ] perfil game
 - [ ] testes em VM
