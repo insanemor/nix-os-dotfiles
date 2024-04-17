@@ -2,6 +2,17 @@
 
 Este repositório contém configurações para NixOS e Home Manager, ideal para configurar um ambiente de sistema operacional de forma reprodutível e portátil usando o NixOS. As configurações são estruturadas para facilitar a instalação, atualização, e manutenção do sistema.
 
+## BUGS
+
+- [ ] script que indentifica a maquina e carrega a configuração correta de hardware
+- [ ] script do keybinding.sh que carrega os atalhos das teclas configuradas
+
+## Features a serem implantas
+
+- [ ] perfil devops
+- [ ] perfil game
+- [ ] testes em VM
+
 ## Instalação
 
 ### Usando Script de Instalação Automática
