@@ -10,14 +10,14 @@
       ignore_dbus_inhibit = false
     }
 
-    listener {
-      timeout = 300 # in seconds
-      on-timeout = loginctl lock-session
-    }
-    listener {
-      timeout = 600 # in seconds
-      on-timeout = systemctl suspend
-    }
+    # listener {
+    #   timeout = 300 # in seconds
+    #   on-timeout = loginctl lock-session
+    # }
+    # listener {
+    #   timeout = 600 # in seconds
+    #   on-timeout = systemctl suspend
+    # }
   '';
 
 }  
