@@ -47,12 +47,12 @@
       # ----------------------------------------------------- 
       # Keyboard
       # ----------------------------------------------------- 
-      #source = ~/.dotfiles/user/wm/hyprland/confs/keyboard.conf
+      source = ~/.dotfiles/user/wm/hyprland/confs/keyboard.conf
 
       # ----------------------------------------------------- 
       # Load pywal color file
       # ----------------------------------------------------- 
-      source = ~/.dotfiles/user/wm/hyprland/confs/colors-hyprland.conf
+      #source = ~/.dotfiles/user/wm/hyprland/confs/colors-hyprland.conf
 
       # ----------------------------------------------------- 
       # Load configuration files
