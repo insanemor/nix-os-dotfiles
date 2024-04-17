@@ -31,7 +31,7 @@ fi
 # Patch flake.nix with different username/name and remove email by default
 sed -i "0,/ins/s//$(whoami)/" ~/.dotfiles/flake.nix
 sed -i "0,/Moreira/s//$(getent passwd $(whoami) | cut -d ':' -f 5 | cut -d ',' -f 1)/" ~/.dotfiles/flake.nix
-sed -i "s/moreira@zaia.com.br//" ~/.dotfiles/flake.nix
+#sed -i "s/moreira@zaia.com.br//" ~/.dotfiles/flake.nix
 
 # Open up editor to manually edit flake.nix before install
 if [ -z "$EDITOR" ]; then
