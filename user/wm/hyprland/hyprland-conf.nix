@@ -52,12 +52,12 @@
       # ----------------------------------------------------- 
       # Load pywal color file
       # ----------------------------------------------------- 
-      #source = ~/.dotfiles/user/wm/hyprland/confs/colors-hyprland.conf
+      source = ~/.dotfiles/user/wm/hyprland/confs/colors-hyprland.conf
 
       # ----------------------------------------------------- 
       # Load configuration files
       # ----------------------------------------------------- 
-      source = ~/.dotfiles/user/wm/hyprland/confs/window.conf
+      source = ~/.dotfiles/user/wm/hyprland/confs/windows.conf
       source = ~/.dotfiles/user/wm/hyprland/confs/decoration.conf
       source = ~/.dotfiles/user/wm/hyprland/confs/layout.conf
       source = ~/.dotfiles/user/wm/hyprland/confs/misc.conf
