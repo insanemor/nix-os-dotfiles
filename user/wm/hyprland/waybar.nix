@@ -23,8 +23,10 @@
         [ 
           "custom/os" 
           "custom/hyprprofile"
-          "custom/appmenu" 
-          "battery" "backlight" 
+          "custom/appmenu"
+          "wlr/taskbar"
+          "battery" 
+          "backlight" 
           "keyboard-state" 
           "pulseaudio" 
           "cpu" 
@@ -51,6 +53,23 @@
           "on-click-right" = "~/.dotfiles/user/wm/hyprland/scripts/keybindings.sh";
           "tooltip" = false;
         };
+        "wlr/taskbar": {
+          "format": "{icon}",
+          "icon-size": 18,
+          "tooltip-format": "{title}",
+          "on-click": "activate",
+          "on-click-middle": "close",
+          "ignore-list": [
+            "Alacritty"
+          ],
+          "app_ids-mapping": {
+              "firefoxdeveloperedition": "firefox-developer-edition"
+          },
+          "rewrite": {
+              "Firefox Web Browser": "Firefox",
+              "Foot Server": "Terminal"
+          }
+        },
         "custom/os" = {
           "format" = " {} ";
           "exec" = ''echo "" '';
