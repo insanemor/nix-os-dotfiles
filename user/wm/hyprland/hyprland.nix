@@ -273,6 +273,7 @@
 
   home.packages = with pkgs; [
     alacritty
+    rangers
     kitty
     feh
     killall
@@ -284,6 +285,7 @@
     wlr-randr
     wtype
     ydotool
+    qutebrowser
     wl-clipboard
     hyprland-protocols
     hyprpicker
