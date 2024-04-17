@@ -27,6 +27,7 @@
   home.packages = with pkgs; [
     alacritty
     ranger
+    musikcube
     kitty
     feh
     killall
