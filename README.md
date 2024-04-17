@@ -13,7 +13,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 
 ## Features a serem implantas
 
-- [ ] add atalhos para os scripts desse repo
+- [X] add atalhos para os scripts desse repo
 - [ ] implantar profile para terminal e navegar e container 
 - [ ] adicionar historico de copy e past 
 - [ ] perfil devops
