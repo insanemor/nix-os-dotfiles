@@ -10,20 +10,14 @@
 
   imports = [
               (./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
-              #(./. + "../../../user/wm"+("/"+userSettings.wm)+"/output-plasma5.nix")# My window manager selected from flake
               ../../user/app/git/git.nix # My git config
               ../../user/shell/sh.nix # My zsh and bash config
               ../../user/style/stylix.nix # Styling and themes for my apps
+              ../../user/app/browser/browser.nix # My browser config
               #../../user/shell/cli-collection.nix # Useful CLI apps
-              #../../user/app/doom-emacs/doom.nix # My doom emacs config
               #../../user/app/ranger/ranger.nix # My ranger file manager config
-              #./../user/app/keepass/keepass.nix # My password manager
-              #(./. + "../../../user/app/browser"+("/"+userSettings.browser)+".nix") # My default browser selected from flake
               #../../user/app/virtualization/virtualization.nix # Virtual machines
               #../../user/app/flatpak/flatpak.nix # Flatpaks
-              #../../user/lang/cc/cc.nix # C and C++ tools
-              #../../user/lang/godot/godot.nix # Game development
-              #../../user/pkgs/blockbench.nix # Blockbench ## marked as insecure
               #../../user/hardware/bluetooth.nix # Bluetooth
             ];
 
