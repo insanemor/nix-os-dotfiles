@@ -48,10 +48,9 @@
         "custom/appmenu" = {
           "format" = "  Apps  ";
           "on-click" = "sleep 0.2;rofi -show drun -replace";
-          "on-click-right" = "~/dotfiles/hypr/scripts/keybindings.sh";
+          "on-click-right" = "~/.dotfiles/user/wm/hyprland/scripts/keybindings.sh";
           "tooltip" = false;
         };
-
         "custom/os" = {
           "format" = " {} ";
           "exec" = ''echo "" '';
