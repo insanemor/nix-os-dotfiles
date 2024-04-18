@@ -6,6 +6,7 @@
 {
   imports =
     [ ../basic/configuration.nix # Personal is essentially work system + games
+      ../devops/configuration.nix
 
     ];
 }

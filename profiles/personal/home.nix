@@ -9,6 +9,7 @@
   programs.home-manager.enable = true;
 
   imports = [ ../basic/home.nix # Personal is essentially work system
+              ../devops/home.nix
 
             ];
 
