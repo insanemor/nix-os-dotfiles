@@ -21,20 +21,6 @@
     hwinfo
     pciutils
     numbat
-    (pkgs.callPackage ../pkgs/smartcalc.nix { })
-    #(pkgs.writeShellScriptBin "sc" ''smartcalc'')
-    #(pkgs.callPackage ../pkgs/pokemon-colorscripts.nix { })
-    #(pkgs.python3Packages.callPackage ../pkgs/impressive.nix { })
-    (pkgs.writeShellScriptBin "airplane-mode" ''
-      #!/bin/sh
-      connectivity="$(nmcli n connectivity)"
-      if [ "$connectivity" == "full" ]
-      then
-          nmcli n off
-      else
-          nmcli n on
-      fi
-    '')
     vim neovim
   ];
 }

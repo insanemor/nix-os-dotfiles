@@ -15,7 +15,7 @@
               ../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/app/browser/qutebrowser.nix # My browser config
               ../../user/app/browser/brave.nix 
-              #../../user/shell/cli-collection.nix # Useful CLI apps
+              ../../user/shell/cli-collection.nix # Useful CLI apps
               #../../user/app/ranger/ranger.nix # My ranger file manager config
               #../../user/app/virtualization/virtualization.nix # Virtual machines
               #../../user/app/flatpak/flatpak.nix # Flatpaks
