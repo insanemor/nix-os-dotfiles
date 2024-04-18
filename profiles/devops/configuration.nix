@@ -7,7 +7,7 @@
 {
   imports =
     [ 
-      ../../user/app/asdf/asdf.nix
+      #../../user/app/asdf/asdf.nix
       
     ];
 

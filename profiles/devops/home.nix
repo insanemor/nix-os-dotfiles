@@ -3,7 +3,7 @@
 {
 
   imports = [
-                #../../user/apps/asdf/asdf.nix
+            ../../user/apps/asdf/asdf.nix
             ];
 
   programs.zsh = {
