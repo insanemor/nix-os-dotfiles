@@ -6,7 +6,7 @@
                 #../../user/apps/asdf/asdf.nix
             ];
 
-  programs.bash = {
+  programs.zsh = {
     initExtra = ''
       . "${pkgs.asdf-vm}/share/asdf-vm/asdf.sh"
       . "${pkgs.asdf-vm}/share/asdf-vm/completions/asdf.bash"

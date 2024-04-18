@@ -3,7 +3,7 @@
 {
 
    
-    home.file."~/.tool-version".text = ''
+    home.file.".tool-versions".text = ''
         terraform 1.0.11
     
     
