@@ -10,6 +10,13 @@
     
     '';
 
-   
+    home.file.".asdfrc".text = ''
+        always_keep_download = yes
+    
+    
+    
+    '';   
+
+
 
 }

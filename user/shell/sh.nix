@@ -88,7 +88,7 @@ in
       bindkey "^[[1;5C" forward-word
 
       ZSH_AUTOSUGGEST_STRATEGY=(completion history)
-
+ 
     '';
   };
 
