@@ -16,7 +16,9 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [X] add atalhos para os scripts desse repo
 - [ ] implantar profile para terminal e navegar e container 
 - [ ] adicionar historico de copy e past 
-- [ ] perfil devops
+- [X] perfil devops
+  - [ ] asdf toolversion
+  - [ ] create script para adicionar novas versoes dentro do toolversion
 - [ ] perfil game
 - [ ] testes em VM
 
