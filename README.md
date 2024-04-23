@@ -10,6 +10,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] history dos comandos nao esta legal , vem primeiro sugestao ao inves de historico de comandos
 - [X] teclado do notbook ainda nao ta legal
 - [ ] erro quando muda de perfil nao abre legal o navegador ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
+- [ ] waybar ainda com bugs graficos e funcionais
 
 ## Features a serem implantas
 
@@ -17,10 +18,16 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] implantar profile para terminal e navegar e container 
 - [ ] adicionar historico de copy e past 
 - [X] perfil devops
-  - [ ] asdf toolversion
+  - [X] asdf toolversion
   - [ ] create script para adicionar novas versoes dentro do toolversion
 - [ ] perfil game
 - [ ] testes em VM
+- [ ] instalar devcontainer na maquina
+- [ ] configurar o waybar com todas as function que estou testando no PC
+- [ ] VSCODE
+  - [ ] adicionar o devcontainer
+  - [ ] instalar plugins
+        
 
 ## Instalação
 
