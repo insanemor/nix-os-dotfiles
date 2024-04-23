@@ -1,1 +1,1 @@
-~/.dotfiles/user/wm/hyprland/rofi/blurred_wallpaper.png
+* { current-image: url("/home/ins/.dotfiles/user/wm/hyprland/rofi/blurred_wallpaper.png", height); }
