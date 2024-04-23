@@ -33,7 +33,7 @@ configuration {
 
 
 /* ---- Load wallpaper ---- */
-/* @import "~/.cache/current_wallpaper.rasi"
+/* @import "~/.dotfiles/user/wm/hyprland/rofi/current_wallpaper.rasi"
 
 
 
