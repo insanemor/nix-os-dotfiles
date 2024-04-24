@@ -1,7 +1,7 @@
 { config, lib, pkgs, userSettings, systemSettings, ... }:
 let
  myAliases = {
-    nasdf = "/.dotfiles/user/app/asdf/nasdf.sh";
+    nasdf = "~/.dotfiles/user/app/asdf/nasdf.sh";
   };
 in
 {
