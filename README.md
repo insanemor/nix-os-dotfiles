@@ -123,25 +123,29 @@ Este comando otimiza o armazenamento do Nix, consolidando arquivos duplicados.
 
 Reforça as permissões dos arquivos e pastas em `.dotfiles`.
 
-### `soften.sh`
-
-Libera as permissões dos arquivos e pastas em `.dotfiles`.
-
 ### `install.sh`
 
 Instala o NixOS e o Home Manager, aplicando todas as configurações deste repositório.
+
+### `print-configuration.sh`
+
+Imprime a configuração do sistema e do usuário.
 
 ### `pull.sh`
 
 Atualiza o repositório, chama `harden.sh` para reforçar as permissões, e sincroniza as configurações com `sync.sh`.
 
-### `sync.sh`
+### `soften.sh`
 
-Aplica as configurações do NixOS e Home Manager, finalizando com `sync-posthook.sh`.
+Libera as permissões dos arquivos e pastas em `.dotfiles`.
 
 ### `sync-posthook.sh`
 
 Verifica logs para necessidade de reiniciar apps e executa esses reinícios.
+
+### `sync.sh`
+
+Aplica as configurações do NixOS e Home Manager, finalizando com `sync-posthook.sh`.
 
 ### `update.sh`
 
