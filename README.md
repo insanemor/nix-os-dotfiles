@@ -7,19 +7,19 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] script que indentifica a maquina e carrega a configuração correta de hardware
 - [ ] script do keybinding.sh que carrega os atalhos das teclas configuradas
 - [ ] erro quando click no menu de aplicativos minimizados
-- [ ] history dos comandos nao esta legal , vem primeiro sugestao ao inves de historico de comandos
+- [ ] history dos comandos nao esta legal , vem primeiro sugestão ao invés de histórico de comandos
 - [X] teclado do notbook ainda nao ta legal
 - [ ] erro quando muda de perfil nao abre legal o navegador ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
-- [ ] waybar ainda com bugs graficos e funcionais
+- [ ] waybar ainda com bugs gráficos e funcionais
 
 ## Features a serem implantas
 
 - [X] add atalhos para os scripts desse repo
-- [ ] implantar profile para terminal e navegar e container 
-- [ ] adicionar historico de copy e past 
+- [ ] implantar profile para terminal e navegar e container
+- [ ] adicionar histórico de copy e past
 - [X] perfil devops
   - [X] asdf toolversion
-  - [ ] create script para adicionar novas versoes dentro do toolversion
+  - [ ] create script para adicionar novas versões dentro do toolversion
 - [ ] perfil game
 - [ ] testes em VM
 - [ ] instalar devcontainer na maquina
@@ -27,7 +27,6 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] VSCODE
   - [ ] adicionar o devcontainer
   - [ ] instalar plugins
-        
 
 ## Instalação
 
