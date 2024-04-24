@@ -53,7 +53,7 @@
 
         
         "custom/empty" = {
-            "format" = ""
+            "format" = "";
         };
 
         "custom/exit" = {
