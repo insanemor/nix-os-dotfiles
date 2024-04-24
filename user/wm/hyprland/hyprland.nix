@@ -26,6 +26,8 @@
 
   home.packages = with pkgs; [
     cliphist
+    xclip
+    swappy
     alacritty
     ranger
     musikcube
