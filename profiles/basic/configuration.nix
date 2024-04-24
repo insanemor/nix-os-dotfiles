@@ -78,7 +78,6 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    nvim
     wget
     zsh
     git
