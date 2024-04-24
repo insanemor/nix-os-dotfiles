@@ -25,12 +25,14 @@
           "custom/hyprprofile"
           "custom/appmenu"
           "wlr/taskbar"
+          "custom/empty"
           "battery" 
           "backlight" 
           "keyboard-state" 
           "pulseaudio" 
           "cpu" 
           "memory"
+          "custom/empty"
         ];
 
         modules-center = 
@@ -42,10 +44,23 @@
         [ 
           "idle_inhibitor" 
           "tray" 
-          "clock" 
+          "custom/empty"
+          "clock"
+          "custom/exit"
         ];
 
         #############################################
+
+        
+        "custom/empty" = {
+            "format" = ""
+        };
+
+        "custom/exit" = {
+            "format" = "";
+            "on-click" = "wlogout";
+            "tooltip" = false
+        };
 
         "custom/os" = {
           "format" = " {} ";
