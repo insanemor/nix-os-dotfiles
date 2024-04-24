@@ -36,7 +36,7 @@ update_tool() {
 
     # Operações Git
     (cd "$HOME/.dotfiles" && git pull && git add user/app/asdf/asdf.nix && git commit -m "Update $tool to $new_version in asdf.nix" && git push)
-    nsync
+    sh ~/.dotfiles/sync.sh
 }
 
 # Função para listar as ferramentas instaladas
