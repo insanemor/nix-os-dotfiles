@@ -23,7 +23,7 @@ add_tool() {
 
     # Operações Git
     (cd "$HOME/.dotfiles" && git pull && git add user/app/asdf/asdf.nix && git commit -m "Add $tool $version to asdf.nix" && git push)
-    nsync
+    sh ~/.dotfiles/sync.sh
 }
 
 # Função para atualizar a versão de uma ferramenta
