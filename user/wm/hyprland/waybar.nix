@@ -59,7 +59,7 @@
         "custom/exit" = {
             "format" = "";
             "on-click" = "wlogout";
-            "tooltip" = false
+            "tooltip" = false;
         };
 
         "custom/os" = {
