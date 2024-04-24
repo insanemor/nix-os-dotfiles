@@ -13,6 +13,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] erro quando muda de perfil nao abre legal o navegador qbrower ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
 - [ ] waybar ainda com bugs gráficos e funcionais
 - [ ] waybar apps nao funciona botão direito e nem via script direto ele abre com erros
+  - [ ] Graficamente nao esta abrindo o mesmo theme que pelo comando
 - [ ] bug ultimo icone nao esta sendo totalmente exibido , no notbook ele esta cortado ao meio.
 
 ## Features a serem implantas
