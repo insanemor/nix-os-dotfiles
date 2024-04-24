@@ -9,7 +9,8 @@
 # by Stephan Raabe (2023) 
 # ----------------------------------------------------- 
 
-DIR="$HOME/Pictures/screenshots/"
+DIR="$HOME/Imagens/screenshots/"
+mkdir -p $DIR
 NAME="screenshot_$(date +%d%m%Y_%H%M%S).png"
 
 option2="Selected area"
