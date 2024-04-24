@@ -64,6 +64,7 @@
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-wlr
     wlsunset
     pavucontrol
     pamixer
