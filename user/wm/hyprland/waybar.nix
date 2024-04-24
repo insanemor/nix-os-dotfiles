@@ -75,16 +75,16 @@
           "tooltip-format" = "{title}";
           "on-click" = "activate";
           "on-click-middle" = "close";
-          "ignore-list": [
+          "ignore-list" = [
            "Alacritty"
-          ],
-          "app_ids-mapping": {
+          ];
+          "app_ids-mapping" = {
             "firefoxdeveloperedition": "firefox-developer-edition"
-          },
-          "rewrite": {
+          };
+          "rewrite" = {
             "Firefox Web Browser": "Firefox",
             "Foot Server": "Terminal"
-          }
+          };
         };
 
         "keyboard-state" = {
