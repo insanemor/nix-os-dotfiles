@@ -25,12 +25,14 @@
           "custom/hyprprofile"
           "custom/appmenu"
           "wlr/taskbar"
+          "tray"           
           "battery" 
           "backlight" 
           "keyboard-state" 
           "pulseaudio" 
           "cpu" 
-          "memory" 
+          "memory"
+          "tray" 
         ];
 
         modules-center = 
@@ -47,6 +49,19 @@
 
         #############################################
 
+        "custom/os" = {
+          "format" = " {} ";
+          "exec" = ''echo "" '';
+          "interval" = "once";
+        };
+
+        "custom/hyprprofile" = {
+          "format" = "   {}";
+          "exec" = ''cat ~/.hyprprofile'';
+          "interval" = 3;
+          "on-click" = "hyprprofile-dmenu";
+        };
+
         "custom/appmenu" = {
           "format" = "  Apps  ";
           "on-click" = "sleep 0.2;rofi -show drun -replace";
@@ -60,19 +75,16 @@
           "tooltip-format" = "{title}";
           "on-click" = "activate";
           "on-click-middle" = "close";
-        };
-
-        "custom/os" = {
-          "format" = " {} ";
-          "exec" = ''echo "" '';
-          "interval" = "once";
-        };
-
-        "custom/hyprprofile" = {
-          "format" = "   {}";
-          "exec" = ''cat ~/.hyprprofile'';
-          "interval" = 3;
-          "on-click" = "hyprprofile-dmenu";
+          "ignore-list": [
+           "Alacritty"
+          ],
+          "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+          },
+          "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+          }
         };
 
         "keyboard-state" = {
