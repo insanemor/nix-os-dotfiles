@@ -76,14 +76,14 @@
           "on-click" = "activate";
           "on-click-middle" = "close";
           "ignore-list" = [
-           "Alacritty"
+           "Alacritty";
           ];
           "app_ids-mapping" = {
-            "firefoxdeveloperedition": "firefox-developer-edition"
+            "firefoxdeveloperedition" = "firefox-developer-edition";
           };
           "rewrite" = {
-            "Firefox Web Browser": "Firefox",
-            "Foot Server": "Terminal"
+            "Firefox Web Browser" = "Firefox";
+            "Foot Server" = "Terminal";
           };
         };
 
