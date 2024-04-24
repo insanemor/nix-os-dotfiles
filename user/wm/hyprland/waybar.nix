@@ -42,6 +42,8 @@
 
         modules-right = 
         [ 
+          "custom/updates"
+          "network"
           "idle_inhibitor" 
           "tray" 
           "custom/empty"
@@ -52,7 +54,19 @@
 
         #############################################
 
-        
+        "network" = {
+            "format" = "{ifname}";
+            "format-wifi" = "   {signalStrength}%";
+            "format-ethernet" = "  {ifname}";
+            "format-disconnected" = "Disconnected";
+            "tooltip-format" = " {ifname} via {gwaddri}";
+            "tooltip-format-wifi" = "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}";
+            "tooltip-format-ethernet" = " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}";
+            "tooltip-format-disconnected" = "Disconnected";
+            "max-length" = 50;
+            "on-click" = "~/.dotfiles/user/hyprland/scripts/networkmanager.sh";
+        };       
+
         "custom/empty" = {
             "format" = "";
         };
