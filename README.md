@@ -10,9 +10,10 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] erro quando click no menu de aplicativos minimizados
 - [ ] history dos comandos nao esta legal , vem primeiro sugestão ao invés de histórico de comandos
 - [X] teclado do notbook ainda nao ta legal
-- [ ] erro quando muda de perfil nao abre legal o navegador ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
+- [ ] erro quando muda de perfil nao abre legal o navegador qbrower ( ia so testar , nao sei se vou manter esse navegador, a ideia era estudar para implantar algo parecido com o Brave)
 - [ ] waybar ainda com bugs gráficos e funcionais
-- [ ] waybar apps nao funciona botao direito e nem via script direto ele abre com erros
+- [ ] waybar apps nao funciona botão direito e nem via script direto ele abre com erros
+- [ ] bug ultimo icone nao esta sendo totalmente exibido , no notbook ele esta cortado ao meio.
 
 ## Features a serem implantas
 
@@ -25,7 +26,8 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] perfil game
 - [ ] testes em VM
 - [ ] instalar devcontainer na maquina
-- [ ] configurar o waybar com todas as function que estou testando no PC
+- [X] configurar o waybar com todas as function que estou testando no PC
+- [ ] Descobrir como configurar o wifi graficamente
 - [ ] VSCODE
   - [ ] adicionar o devcontainer
   - [ ] instalar plugins
