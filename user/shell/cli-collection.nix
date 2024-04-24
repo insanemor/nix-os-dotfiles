@@ -21,6 +21,6 @@
     hwinfo
     pciutils
     numbat
-    vim neovim
+    neovim
   ];
 }

@@ -17,6 +17,7 @@ let
     update = "~/.dotfiles/update.sh";
     upgrade = "~/.dotfiles/upgrade.sh";
     garbage = "sudo nix-collect-garbage -d";
+    vim = "nvim";
 
   };
 in
