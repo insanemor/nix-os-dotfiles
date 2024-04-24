@@ -26,7 +26,6 @@
 
   home.packages = with pkgs; [
     cliphist
-    nm-connection-editor
     wlogout
     xclip
     swappy
