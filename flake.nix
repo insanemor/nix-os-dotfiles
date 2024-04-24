@@ -48,7 +48,7 @@
         term = "alacritty";                                           # Default terminal command;
         font = "Intel One Mono";                                      # Selected font
         fontPkg = pkgs.intel-one-mono;                                # Font package
-        editor = "vim";                                               # Default editor;
+        editor = "nvim";                                               # Default editor;
         # editor spawning translator
         # generates a command that can be used to spawn editor inside a gui
         # EDITOR and TERM session variables must be set in home.nix or other module
