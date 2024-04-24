@@ -71,7 +71,7 @@ sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/system/hardware-
 
 Este comando cria a configuração de hardware específica para sua máquina.
 
-### Aplicar Configuração do Sistema
+### Aplicar Configuração do Sistema  - Manual
 
 Use flakes para aplicar a configuração do sistema:
 
@@ -81,7 +81,7 @@ sudo nixos-rebuild switch --flake ~/.dotfiles#system
 
 Este comando reconstrói o sistema com as configurações especificadas para o sistema.
 
-### Configurar Home Manager
+### Configurar Home Manager - Manual
 
 Configure o ambiente do usuário com o Home Manager:
 
@@ -116,6 +116,38 @@ nix-store --optimize
 ```
 
 Este comando otimiza o armazenamento do Nix, consolidando arquivos duplicados.
+
+## Alias Configurado apos a instalação
+
+Este comando executa o script  `pull.sh`
+
+```bash
+npull
+```
+
+Este comando executa o script  `soften.sh`
+
+```bash
+nsoften
+```
+
+Este comando executa o script  `sync.sh`
+
+```bash
+nsync
+```
+
+Este comando executa o script  `update.sh`
+
+```bash
+nupdate
+```
+
+Este comando executa o script  `upgrade.sh`
+
+```bash
+nupgrade
+```
 
 ## Scripts Inclusos
 
