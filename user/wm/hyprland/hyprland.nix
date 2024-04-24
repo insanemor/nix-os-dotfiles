@@ -26,7 +26,6 @@
 
   home.packages = with pkgs; [
     cliphist
-    waybar
     xclip
     swappy
     alacritty
