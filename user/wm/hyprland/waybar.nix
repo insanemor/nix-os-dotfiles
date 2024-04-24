@@ -76,7 +76,7 @@
           "on-click" = "activate";
           "on-click-middle" = "close";
           "ignore-list" = [
-           "Alacritty";
+           "Alacritty"
           ];
           "app_ids-mapping" = {
             "firefoxdeveloperedition" = "firefox-developer-edition";
