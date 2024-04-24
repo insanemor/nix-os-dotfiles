@@ -42,7 +42,6 @@
 
         modules-right = 
         [ 
-          "custom/updates"
           "network"
           "idle_inhibitor" 
           "tray" 
