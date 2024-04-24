@@ -25,14 +25,12 @@
           "custom/hyprprofile"
           "custom/appmenu"
           "wlr/taskbar"
-          "tray"           
           "battery" 
           "backlight" 
           "keyboard-state" 
           "pulseaudio" 
           "cpu" 
           "memory"
-          "tray" 
         ];
 
         modules-center = 
