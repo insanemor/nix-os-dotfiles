@@ -34,7 +34,7 @@ configuration {
 @import "~/.dotfiles/user/wm/hyprland/rofi/colors-rofi-pywal"
 
 /* ---- Load wallpaper ---- */
-@import "~~/.dotfiles/user/wm/hyprland/rofi/current_wallpaper.rasi"
+@import "~/.dotfiles/user/wm/hyprland/rofi/current_wallpaper.rasi"
 
 /* ---- Load border width ---- */
 @import "~/.dotfiles/user/wm/hyprland/rofi/rofi-border.rasi"
