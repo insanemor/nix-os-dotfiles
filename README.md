@@ -32,6 +32,8 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] VSCODE
   - [ ] adicionar o devcontainer
   - [ ] instalar plugins
+- [ ] Instalar alguma coisa para ser de calendário
+- [ ] criar um atalho para calculadora
 
 ## Instalação
 
