@@ -144,13 +144,13 @@
           };
         };
         tray = {
-          #"icon-size" = 21;
+          "icon-size" = 21;
           "spacing" = 10;
         };
         clock = {
           "interval" = 1;
           "format" = "{:%a %Y-%m-%d %I:%M:%S %p}";
-          "timezone" = "America/Chicago";
+          "timezone" = "America/Sao_Paulo";
           "tooltip-format" = ''
             <big>{:%Y %B}</big>
             <tt><small>{calendar}</small></tt>'';
@@ -236,29 +236,29 @@
           background: inherit;
       }
 
-      #workspaces button {
+      workspaces button {
           padding: 0 7px;
           background-color: transparent;
           color: #'' + config.lib.stylix.colors.base04 + '';
       }
 
-      #workspaces button:hover {
+      workspaces button:hover {
           color: #'' + config.lib.stylix.colors.base07 + '';
       }
 
-      #workspaces button.active {
+      workspaces button.active {
           color: #'' + config.lib.stylix.colors.base08 + '';
       }
 
-      #workspaces button.focused {
+      workspaces button.focused {
           color: #'' + config.lib.stylix.colors.base0A + '';
       }
 
-      #workspaces button.visible {
+      workspaces button.visible {
           color: #'' + config.lib.stylix.colors.base05 + '';
       }
 
-      #workspaces button.urgent {
+      workspaces button.urgent {
           color: #'' + config.lib.stylix.colors.base09 + '';
       }
 
@@ -364,11 +364,11 @@
           color: #'' + config.lib.stylix.colors.base04 + '';
       }
 
-      #tray > .passive {
+      tray > .passive {
           -gtk-icon-effect: dim;
       }
 
-      #tray > .needs-attention {
+      tray > .needs-attention {
           -gtk-icon-effect: highlight;
       }
 
