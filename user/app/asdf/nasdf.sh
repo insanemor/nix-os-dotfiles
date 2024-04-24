@@ -3,9 +3,12 @@
 # Diretório do arquivo de configuração do ASDF no repositório
 ASDF_CONFIG_FILE="$HOME/.dotfiles/user/app/asdf/asdf.nix"
 
+echo "Arquivo de configuração: $ASDF_CONFIG_FILE"
+
 # Função para instalar ferramentas do arquivo .tool-versions
 install_tools() {
     while read -r tool version; do
+        echo "Instalando: $tool $version"
         asdf plugin-add "$tool"
         asdf install "$tool" "$version"
     done < ~/.tool-versions
@@ -16,6 +19,7 @@ add_tool() {
     local tool=$1
     local version=$2
 
+    echo "Adicionando ferramenta: $tool $version"
     # Adiciona a ferramenta e versão ao arquivo asdf.nix
     sed -i "/.tool-versions.text = '/ a\\
         $tool $version\\
@@ -31,6 +35,7 @@ update_tool() {
     local tool=$1
     local new_version=$2
 
+    echo "Atualizando ferramenta: $tool para $new_version"
     # Atualiza a versão no arquivo asdf.nix
     sed -i "s/$tool [0-9.]*/$tool $new_version/" "$ASDF_CONFIG_FILE"
 
