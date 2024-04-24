@@ -26,6 +26,7 @@
 
   home.packages = with pkgs; [
     cliphist
+    wlogout
     xclip
     swappy
     alacritty
