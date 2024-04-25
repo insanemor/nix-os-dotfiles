@@ -23,7 +23,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [X] adicionar histórico de copy e past
 - [X] perfil devops
   - [X] asdf toolversion
-  - [ ] create script para adicionar novas versões dentro do toolversion
+  - [X] create script para adicionar novas versões dentro do toolversion
 - [ ] perfil game
 - [ ] testes em VM
 - [ ] instalar devcontainer na maquina
