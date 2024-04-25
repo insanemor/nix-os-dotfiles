@@ -43,11 +43,11 @@
         "--net=host",
         "--memory=1024mb",
         "--userns=keep-id",
-        "-u", "${localEnv:UID}:${localEnv:UID}",
+        "-u", "1000:1000",
         "-v", "/home/ins/GIT:/work"
       ]
 
-
+      
     }
   
   '';
