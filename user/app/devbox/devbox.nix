@@ -2,10 +2,6 @@
 
 {
 
-  # Useful  tools
-  environment.systemPackages = with pkgs; [
-    devbox
-  ];
 
   xdg.configFile."dconf/.keep".source = builtins.toFile "keep" ""; 
 
