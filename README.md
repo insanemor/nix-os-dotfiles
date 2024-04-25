@@ -15,6 +15,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] waybar apps nao funciona botão direito e nem via script direto ele abre com erros
   - [ ] Graficamente nao esta abrindo o mesmo theme que pelo comando
 - [ ] bug ultimo icone nao esta sendo totalmente exibido , no notbook ele esta cortado ao meio.
+- [ ] os icones e temas nao esta legal ainda
 
 ## Features a serem implantas
 
@@ -34,6 +35,9 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
   - [ ] instalar plugins
 - [ ] Instalar alguma coisa para ser de calendário
 - [ ] criar um atalho para calculadora
+- [ ] ajustes de janelas nas posições , acho que deve ter uma forma mais rápida de ficar na posição que eu quero
+- [ ] descobrir se tem como usar abas no terminal alacritty
+- [ ] descobrir se tem como usar raimiter ou algo similar
 
 ## Instalação
 
