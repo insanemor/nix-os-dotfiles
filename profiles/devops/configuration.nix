@@ -8,6 +8,7 @@
   imports =
     [ 
       ../../system/app/podman/podman.nix
+      ../../system/app/devbox/devbox.nix
     ];
 
   # System packages

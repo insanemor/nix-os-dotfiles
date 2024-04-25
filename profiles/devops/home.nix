@@ -4,6 +4,7 @@
 
   imports = [
             ../../user/app/asdf/asdf.nix
+            ../../user/app/devbox/devbox.nix
             ];
 
   programs.zsh = {
