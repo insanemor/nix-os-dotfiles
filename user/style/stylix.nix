@@ -44,7 +44,7 @@ in
     };
   };
 
-  stylix.targets.alacritty.enable = false;
+  stylix.targets.alacritty.enable = true;
   programs.alacritty.settings = {
     colors = {
       # TODO revisit these color mappings
