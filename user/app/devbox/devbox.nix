@@ -23,7 +23,7 @@
     {
       "name": "Ferramentas de Desenvolvimento",
       
-      "image": "insanemor/tools:3.6",
+      "image": "docker.io/insanemor/tools:3.6",
       
       "service": "dev_container",
       
@@ -47,7 +47,7 @@
         "-v", "/home/ins/GIT:/work"
       ]
 
-      
+
     }
   
   '';
