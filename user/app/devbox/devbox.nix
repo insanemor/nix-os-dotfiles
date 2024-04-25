@@ -3,7 +3,7 @@
 {
 
 
-  xdg.configFile."dconf/.keep".source = builtins.toFile "keep" ""; 
+  xdg.configFile."~/dconf/.keep".source = builtins.toFile "keep" ""; 
 
   
   # home.file.".tool-versions".text = ''
