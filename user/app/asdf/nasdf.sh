@@ -21,7 +21,7 @@ add_tool() {
 
     echo "Adicionando ferramenta: $tool $version"
     # Adiciona a ferramenta e versão ao arquivo asdf.nix
-    sed -i "/.tool-versions.text = '/ a\\
+    sed -i "/home.file.\".tool-versions\".text = ''/a\\
         $tool $version\\
     " "$ASDF_CONFIG_FILE"
 
