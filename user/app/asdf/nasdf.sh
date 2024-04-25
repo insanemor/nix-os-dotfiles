@@ -27,6 +27,10 @@ add_tool() {
     # Operações Git
     (cd "$HOME/.dotfiles" && git pull && git add user/app/asdf/asdf.nix && git commit -m "Add $tool $version to asdf.nix" && git push)
     sh ~/.dotfiles/sync.sh
+
+    # Chama a função install_tools para instalar a ferramenta adicionada
+    echo "Instalando a ferramenta adicionada: $tool $version"
+    install_tools
 }
 
 # Função para atualizar a versão de uma ferramenta
@@ -41,6 +45,10 @@ update_tool() {
     # Operações Git
     (cd "$HOME/.dotfiles" && git pull && git add user/app/asdf/asdf.nix && git commit -m "Update $tool to $new_version in asdf.nix" && git push)
     sh ~/.dotfiles/sync.sh
+    
+    # Chama a função install_tools para instalar a ferramenta adicionada
+    echo "Instalando a ferramenta adicionada: $tool $version"
+    install_tools    
 }
 
 # Função para listar as ferramentas instaladas
