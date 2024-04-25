@@ -9,4 +9,12 @@
     init.defaultBranch = "main";
     safe.directory = "/home/" + userSettings.username + "/.dotfiles";
   };
+
+
+  home.file."GIT/.keep".text = ''
+    Welcome to the Insane world ! 
+  
+  '';
+
+
 }
