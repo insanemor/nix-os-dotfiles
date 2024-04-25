@@ -4,7 +4,6 @@
 
   imports = [
             ../../user/app/asdf/asdf.nix
-            ../../system/app/podman/podman.nix
             ];
 
   programs.zsh = {
