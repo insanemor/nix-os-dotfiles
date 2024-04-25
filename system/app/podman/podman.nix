@@ -14,6 +14,12 @@
     };
   };
 
+
+  environment.variables = {
+    REGISTRY = "docker.io";
+  };
+
+
   # Useful otherdevelopment tools
   environment.systemPackages = with pkgs; [
     dive # look into docker image layers
