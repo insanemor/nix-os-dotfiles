@@ -28,6 +28,8 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] perfil game
 - [ ] testes em VM
 - [ ] instalar devcontainer na maquina
+  - [ ] vou tentar criar o dockerfile de tools diretamente dentro de pastas, e perfis
+    - [ ] perfil default  
 - [X] configurar o waybar com todas as function que estou testando no PC
 - [ ] Descobrir como configurar o wifi graficamente
 - [ ] VSCODE
@@ -38,6 +40,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] ajustes de janelas nas posições , acho que deve ter uma forma mais rápida de ficar na posição que eu quero
 - [ ] descobrir se tem como usar abas no terminal alacritty
 - [ ] descobrir se tem como usar raimiter ou algo similar
+- [ ] pensar em uma forma de ter chaves de acesso de forma segura, pensando em usar o SOPS.
 
 ## Instalação
 
