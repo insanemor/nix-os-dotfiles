@@ -5,7 +5,7 @@
 
   #xdg.configFile."~/dconf/.keep".source = builtins.toFile "keep" ""; 
 
-  home.file."~/dconf/.keep".text = ''
+  home.file."/dconf/.keep".text = ''
       text
   
   '';
