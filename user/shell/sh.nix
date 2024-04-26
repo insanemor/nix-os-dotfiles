@@ -13,7 +13,6 @@ let
     fetch = "disfetch";
     gitfetch = "onefetch";
     vim = "nvim";
-
     nsoften = "sudo sh ~/.dotfiles/soften.sh";
     nsync = "sh ~/.dotfiles/sync.sh";
     npull = "sh ~/.dotfiles/pull.sh";
@@ -87,11 +86,32 @@ in
     };
 
     initExtra = ''
-      bindkey "^[[1;5D" backward-word
-      bindkey "^[[1;5C" forward-word
 
-      ZSH_AUTOSUGGEST_STRATEGY=(completion history)
- 
+      # fdfind conf
+      export FZF_COMPLETION_TRIGGER='~~'
+      export FZF_COMPLETION_OPTS='--border --info=inline'
+
+      _fzf_compgen_path() {
+        fd --hidden --follow --exclude ".git" . "$1"
+      }
+
+      _fzf_compgen_dir() {
+        fd --type d --hidden --follow --exclude ".git" . "$1"
+      }
+
+      _fzf_comprun() {
+        local command=$1
+        shift
+
+        case "$command" in
+          cd)           fzf --preview 'tree -C {} | head -200'   "$@" ;;
+          export|unset) fzf --preview "eval 'echo \$'{}"         "$@" ;;
+          ssh)          fzf --preview 'dig {}'                   "$@" ;;
+          *)            fzf --preview 'bat -n --color=always {}' "$@" ;;
+        esac
+
+      }
+
     '';
   };
 
