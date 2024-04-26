@@ -1,9 +1,21 @@
 { pkgs, ... }:
+let
 
+  # My shell aliases
+  myAliases = {
+    k  = "kubectl";
+    tf = "terraform";
+    tg = "terragrunt";
+  };
+
+in
 {
 
 
-  #xdg.configFile."~/dconf/.keep".source = builtins.toFile "keep" ""; 
+  programs.zsh = {
+    shellAliases = myAliases;
+  };
+
 
   home.file."/dconf/default/devbox.json".text = ''
     {

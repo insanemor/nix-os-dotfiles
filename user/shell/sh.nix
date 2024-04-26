@@ -20,6 +20,9 @@ let
     update = "sh ~/.dotfiles/update.sh";
     upgrade = "sh ~/.dotfiles/upgrade.sh";
     garbage = "sudo nix-collect-garbage -d";
+    pd = "podman";
+    pda = "podman ps -a";
+
 
   };
 in
