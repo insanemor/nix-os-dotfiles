@@ -13,6 +13,7 @@ let
     fetch = "disfetch";
     gitfetch = "onefetch";
     vim = "nvim";
+    cd = "z";
     nsoften = "sudo sh ~/.dotfiles/soften.sh";
     nsync = "sh ~/.dotfiles/sync.sh";
     npull = "sh ~/.dotfiles/pull.sh";
@@ -87,6 +88,9 @@ in
 
     initExtra = ''
 
+      # inicializa o zoxide
+      eval "$(zoxide init zsh)"
+
       # fdfind conf
       export FZF_COMPLETION_TRIGGER='~~'
       export FZF_COMPLETION_OPTS='--border --info=inline'
@@ -131,7 +135,7 @@ in
     bat eza bottom fd bc
     direnv nix-direnv
     zsh-powerlevel10k
-    fzf
+    fzf zoxide
   ];
 
   programs.direnv.enable = true;
