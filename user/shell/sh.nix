@@ -111,6 +111,7 @@ in
     bat eza bottom fd bc
     direnv nix-direnv
     zsh-powerlevel10k
+    fzf
   ];
 
   programs.direnv.enable = true;
