@@ -45,6 +45,7 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
       a ideia é compartilhar esse devbox shell com todos os cliente assim tendo um histórico de comandos compartilhado.
 - [ ] descobrir como adicionar as secrets dos clientes.
 - [ ] Criar um devbox com kubernetes de lab interno usando o kind.
+- [ ] Instalar Task para gerenciar as tarefas
 
 ## Instalação
 
