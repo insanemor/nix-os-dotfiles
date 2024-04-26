@@ -12,6 +12,7 @@
               (./. + "../../../user/wm"+("/"+userSettings.wm+"/"+userSettings.wm)+".nix") # My window manager selected from flake
               ../../user/app/git/git.nix # My git config
               ../../user/shell/sh.nix # My zsh and bash config
+              ../../user/shell/fzf.nix # fzf config 
               ../../user/style/stylix.nix # Styling and themes for my apps
               ../../user/app/browser/qutebrowser.nix # My browser config
               ../../user/app/browser/brave.nix 

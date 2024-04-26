@@ -91,39 +91,7 @@ in
       # inicializa o zoxide
       eval "$(zoxide init zsh)"
 
-      # fdfind conf
-      export FZF_COMPLETION_TRIGGER='~~'
-      export FZF_COMPLETION_OPTS='--border --info=inline'
-
-      _fzf_compgen_path() {
-        fd --hidden --follow --exclude ".git" . "$1"
-      }
-
-      _fzf_compgen_dir() {
-        fd --type d --hidden --follow --exclude ".git" . "$1"
-      }
-
-      _fzf_comprun() {
-        local command=$1
-        shift
-
-        case "$command" in
-          cd)           fzf --preview 'tree -C {} | head -200'   "$@" ;;
-          export|unset) fzf --preview "eval 'echo \$'{}"         "$@" ;;
-          ssh)          fzf --preview 'dig {}'                   "$@" ;;
-          *)            fzf --preview 'bat -n --color=always {}' "$@" ;;
-        esac
-
-      }
-
-      # Configuração para substituir Ctrl+R para usar fzf para busca no histórico
-      autoload -Uz up-line-or-beginning-search
-      autoload -Uz down-line-or-beginning-search
-      zle -N up-line-or-beginning-search
-      zle -N down-line-or-beginning-search
-      bindkey "^[[A" up-line-or-beginning-search
-      bindkey "^[[B" down-line-or-beginning-search
-      bindkey '^R' fzf-history-widget
+      
 
     '';
   };
@@ -144,7 +112,7 @@ in
     bat eza bottom fd bc
     direnv nix-direnv
     zsh-powerlevel10k
-    fzf zoxide
+    zoxide
   ];
 
   programs.direnv.enable = true;
