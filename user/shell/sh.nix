@@ -4,6 +4,7 @@ let
   # My shell aliases
   myAliases = {
     ls = "eza --icons -l -T -L=1";
+    ll = "eza --icons -l -T -L=1 -a";
     cat = "bat";
     htop = "btm";
     fd = "fd -Lu";
@@ -11,13 +12,14 @@ let
     neofetch = "disfetch";
     fetch = "disfetch";
     gitfetch = "onefetch";
+    vim = "nvim";
+
     nsoften = "sudo sh ~/.dotfiles/soften.sh";
     nsync = "sh ~/.dotfiles/sync.sh";
     npull = "sh ~/.dotfiles/pull.sh";
     update = "sh ~/.dotfiles/update.sh";
     upgrade = "sh ~/.dotfiles/upgrade.sh";
     garbage = "sudo nix-collect-garbage -d";
-    vim = "nvim";
 
   };
 in
