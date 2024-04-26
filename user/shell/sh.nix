@@ -33,7 +33,7 @@ in
     autosuggestion.enable = true;
 
 
-    historySubstringSearch.enable = true;
+    historySubstringSearch.enable = false;
     
     history = {
       size = 999999;
