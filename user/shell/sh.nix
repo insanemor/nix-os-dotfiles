@@ -116,6 +116,15 @@ in
 
       }
 
+      # Configuração para substituir Ctrl+R para usar fzf para busca no histórico
+      autoload -Uz up-line-or-beginning-search
+      autoload -Uz down-line-or-beginning-search
+      zle -N up-line-or-beginning-search
+      zle -N down-line-or-beginning-search
+      bindkey "^[[A" up-line-or-beginning-search
+      bindkey "^[[B" down-line-or-beginning-search
+      bindkey '^R' fzf-history-widget
+
     '';
   };
 
