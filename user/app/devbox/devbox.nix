@@ -17,8 +17,6 @@ in
 
     initExtra = ''
 
-      # Load devbox shell environment
-      eval "$(devbox global shellenv)"
 
     '';
 
