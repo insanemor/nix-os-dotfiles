@@ -20,14 +20,14 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 ## Features a serem implantas
 
 - [X] add atalhos para os scripts desse repo
-- [ ] implantar profile para terminal e navegar e container
+- [X] implantar profile para terminal e navegar e container ( descidido usar o devcontainer e devbox )
 - [X] adicionar histórico de copy e past
 - [X] perfil devops
   - [X] asdf toolversion
   - [X] create script para adicionar novas versões dentro do toolversion
 - [ ] perfil game
 - [ ] testes em VM
-- [ ] instalar devcontainer na maquina
+- [X] instalar devcontainer na maquina
   - [ ] vou tentar criar o dockerfile de tools diretamente dentro de pastas, e perfis
     - [ ] perfil default  
 - [X] configurar o waybar com todas as function que estou testando no PC
