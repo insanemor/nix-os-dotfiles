@@ -16,6 +16,7 @@
     fzf
     zsh-forgit
     zsh-fzf-history-search
+    zsh-fzf-tab
   ];
 
 

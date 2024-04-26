@@ -91,6 +91,10 @@ in
       # inicializa o zoxide
       eval "$(zoxide init zsh)"
 
+      # inicializa o fzf-tab
+      source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
+      
+
     '';
   };
 
