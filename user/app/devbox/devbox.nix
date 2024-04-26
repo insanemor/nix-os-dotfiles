@@ -14,6 +14,14 @@ in
 
   programs.zsh = {
     shellAliases = myAliases;
+
+    initExtra = ''
+
+      # Load devbox shell environment
+      eval "$(devbox global shellenv)"
+
+    '';
+
   };
 
 
