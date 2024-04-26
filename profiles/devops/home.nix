@@ -6,6 +6,7 @@
             ../../user/app/asdf/asdf.nix
             ../../user/app/devbox/devbox.nix
             ../../user/app/devcontainer/devcontainer.nix
+            ../../user/app/taskfile/task.nix
             ];
 
   programs.zsh = {
