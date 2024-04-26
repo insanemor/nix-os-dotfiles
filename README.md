@@ -32,9 +32,9 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
     - [ ] perfil default  
 - [X] configurar o waybar com todas as function que estou testando no PC
 - [ ] Descobrir como configurar o wifi graficamente
-- [ ] VSCODE
-  - [ ] adicionar o devcontainer
-  - [ ] instalar plugins
+- [X] VSCODE
+  - [X] adicionar o devcontainer
+  - [X] instalar plugins
 - [ ] Instalar alguma coisa para ser de calendário
 - [ ] criar um atalho para calculadora
 - [ ] ajustes de janelas nas posições , acho que deve ter uma forma mais rápida de ficar na posição que eu quero
