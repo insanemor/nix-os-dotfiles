@@ -8,7 +8,7 @@
   home.file."/dconf/default/devbox.json".text = ''
     {
       "packages": [
-        "awscli2@2.15.18",
+        "awscli2@2.15.38",
         "kubernetes-helm@3.14.4",
         "k9s@0.32.4",
         "kubectl@1.29.4",
