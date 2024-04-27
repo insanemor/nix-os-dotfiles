@@ -17,6 +17,7 @@
               ../../user/app/browser/qutebrowser.nix # My browser config
               ../../user/app/browser/brave.nix 
               ../../user/shell/cli-collection.nix # Useful CLI apps
+              ../../user/app/vscode/vscode.nix
               #../../user/app/ranger/ranger.nix # My ranger file manager config
               #../../user/app/virtualization/virtualization.nix # Virtual machines
               #../../user/app/flatpak/flatpak.nix # Flatpaks
