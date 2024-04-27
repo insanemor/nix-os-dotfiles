@@ -9,7 +9,6 @@
     enable = true;
   };
 
-  polkitPolicyOwners = [ "ins" ];
 
   # Useful otherdevelopment tools
   # environment.systemPackages = with pkgs; [
