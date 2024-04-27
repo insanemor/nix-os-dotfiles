@@ -40,10 +40,10 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] ajustes de janelas nas posições , acho que deve ter uma forma mais rápida de ficar na posição que eu quero
 - [ ] descobrir se tem como usar abas no terminal alacritty
 - [ ] descobrir se tem como usar raimiter ou algo similar
-- [ ] pensar em uma forma de ter chaves de acesso de forma segura, pensando em usar o SOPS.
+- [X] pensar em uma forma de ter chaves de acesso de forma segura, pensando em usar o SOPS. ( pelos testes de decidido usar o 1password)
 - [X] configurado devbox e devcontainer perfil default, simulando o docker que tenho hoje para acesso aos clientes //
       a ideia é compartilhar esse devbox shell com todos os cliente assim tendo um histórico de comandos compartilhado.
-- [ ] descobrir como adicionar as secrets dos clientes.
+- [X] descobrir como adicionar as secrets dos clientes.
 - [ ] Criar um devbox com kubernetes de lab interno usando o kind.
 - [ ] Instalar Task para gerenciar as tarefas
 
