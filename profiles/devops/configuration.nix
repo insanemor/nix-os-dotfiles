@@ -9,6 +9,7 @@
     [ 
       ../../system/app/podman/podman.nix
       ../../system/app/devbox/devbox.nix
+      ../../system/app/1password/1password.nix
     ];
 
   # System packages
