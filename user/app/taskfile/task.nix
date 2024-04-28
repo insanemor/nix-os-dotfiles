@@ -2,7 +2,7 @@
 
 {
 
-  home.file."/dconf/default/taskfile.json".text = ''
+  home.file."/dconf/default/Taskfile.yml".text = ''
 
     version: '3'
 
