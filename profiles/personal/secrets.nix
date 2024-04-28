@@ -6,7 +6,8 @@
   home.username = userSettings.username;
   home.homeDirectory = "/home/"+userSettings.username;
 
-  imports = [ ] ++ lib.optional (builtins.pathExists ../../../dconf/clientes/CB/nixos/main.nix) .../../../dconf/clientes/CB/nixos/main.nix;
+  imports = [ ] ++ lib.optional (builtins.pathExists ../clientes/CB/nixos/main.nix) ../clientes/CB/nixos/main.nix;
+
 
 
 }
