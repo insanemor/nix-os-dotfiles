@@ -11,7 +11,7 @@
   imports = [ ../basic/home.nix # Personal is essentially work system
               ../devops/home.nix
               ../../user/app/libreoffice/libreoffice.nix
-            ] #++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
+            ]; #++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
