@@ -20,6 +20,7 @@
 
   imports = [ 
     #../clientes/SBIT/nixos/main.nix
+    ${dconf-insanemor}/SBIT/nixos/main.nix
   ];
 
 }
