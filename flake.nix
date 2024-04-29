@@ -188,7 +188,7 @@
 
     submodule = {
       url = "git@github.com:insanemor/dconf-clientes.git?submodules=1";
-      path = ./profile/clientes;
+      #path = ./profile/clientes;
       flake = false;
     };
 
