@@ -13,6 +13,8 @@
               ../../user/app/libreoffice/libreoffice.nix
             ]; #++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
 
+  secrets.enable = true;
+
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
