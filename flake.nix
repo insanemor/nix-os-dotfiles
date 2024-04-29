@@ -195,7 +195,7 @@
     #dconf-insanemor = "path:/home/ins/dconf/clientes";
 
     bar = {
-      url = "github.com:insanemor/dconf-clientes.git";
+      url = "github.com:insanemor/dconf-clientes/main";
       flake = false;
     };
 
