@@ -187,7 +187,8 @@
   inputs = {
 
     submodule = {
-      url = "git+file:profiles/clientes?submodules=1";
+      url = "git@github.com:insanemor/dconf-clientes.git?submodules=1";
+      path = ./profile/clientes;
       flake = false;
     };
 
