@@ -15,6 +15,6 @@
         url = "git+file:../clientes";
         flake = false;
       };
-  }
+  };
 
 }
