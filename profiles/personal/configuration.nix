@@ -8,6 +8,6 @@
     [ ../basic/configuration.nix # Personal is essentially work system + games
       ../devops/configuration.nix
 
-    ]; # ++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
+    ];
     
 }
