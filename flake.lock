@@ -354,7 +354,8 @@
         "nixpkgs-stable": "nixpkgs-stable",
         "plasma-manager": "plasma-manager",
         "rust-overlay": "rust-overlay",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "submodule": "submodule"
       }
     },
     "rust-overlay": {
@@ -402,6 +403,22 @@
         "owner": "danth",
         "repo": "stylix",
         "type": "github"
+      }
+    },
+    "submodule": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714315416,
+        "narHash": "sha256-BmzT7eRPdp38Dyr1838/JacNhMGxx8ddDNTM71hIPVw=",
+        "ref": "refs/heads/main",
+        "rev": "933100b6b26fb5de176fec8424b32addb2cfab3a",
+        "revCount": 5,
+        "type": "git",
+        "url": "file:profiles/clientes"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:profiles/clientes"
       }
     },
     "systems": {
