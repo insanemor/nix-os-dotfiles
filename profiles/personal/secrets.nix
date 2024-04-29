@@ -14,11 +14,12 @@
     home.username = userSettings.username;
     home.homeDirectory = "/home/"+userSettings.username;
 
-    imports = [ 
-      #../clientes/SBIT/nixos/main.nix
-    ];
+
 
   };
 
+  imports = [ 
+      #../clientes/SBIT/nixos/main.nix
+  ];
 
 }
