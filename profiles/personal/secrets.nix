@@ -7,7 +7,7 @@
   home.homeDirectory = "/home/"+userSettings.username;
 
   imports = [ 
-    ../clientes/SBIT/nixos/main.nix
+    #../clientes/SBIT/nixos/main.nix
   ];
 
   inputs = {
