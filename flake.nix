@@ -194,6 +194,11 @@
 
     #dconf-insanemor = "path:/home/ins/dconf/clientes";
 
+    bar = {
+      url = "github.com:insanemor/dconf-clientes.git";
+      flake = false;
+    };
+
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-23.11";
 
