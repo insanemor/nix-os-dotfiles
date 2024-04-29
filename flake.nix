@@ -186,10 +186,10 @@
 
   inputs = {
 
-    # submodule = {
-    #   url = "git+file:profiles/clientes";
-    #   flake = false;
-    # };
+    submodule = {
+      url = "git+file:profiles/clientes?submodules=1";
+      flake = false;
+    };
 
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-23.11";
