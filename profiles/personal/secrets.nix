@@ -7,7 +7,7 @@
       lib.mkEnableOption "Enable secrets";
   };
 
-  config = lib.mkIf options.secrets.enable {
+  config = lib.mkIf config.secrets.enable {
 
     # Home Manager needs a bit of information about you and the paths it should
     # manage.
