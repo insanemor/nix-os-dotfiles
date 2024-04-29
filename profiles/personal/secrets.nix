@@ -10,11 +10,5 @@
     #../clientes/SBIT/nixos/main.nix
   ];
 
-  inputs = {
-      submodule = {
-        url = "git+file:../clientes";
-        flake = false;
-      };
-  };
 
 }
