@@ -192,7 +192,7 @@
     #   flake = false;
     # };
 
-    dconf-insanemor = "path:/home/ins/dconf/clientes";
+    #dconf-insanemor = "path:/home/ins/dconf/clientes";
 
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-23.11";
