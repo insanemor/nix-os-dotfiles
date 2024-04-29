@@ -9,4 +9,11 @@
       ../devops/configuration.nix
 
     ];
+    
+  options = {
+    submoduleSupport = {
+      enable = true;
+    };
+  };
+
 }

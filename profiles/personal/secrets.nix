@@ -1,4 +1,4 @@
-{ lib, config, pkgs, userSettings, ... }:
+{ lib, config, pkgs, userSettings, options, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -6,7 +6,9 @@
   home.username = userSettings.username;
   home.homeDirectory = "/home/"+userSettings.username;
 
-  imports = [ ] ++ lib.optional (builtins.pathExists ../clientes/CB/nixos/main.nix) ../clientes/CB/nixos/main.nix;
+  imports = [ 
+    ../clientes/SBIT/nixos/main.nix
+  ];
 
 
 
