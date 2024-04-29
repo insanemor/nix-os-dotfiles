@@ -186,11 +186,13 @@
 
   inputs = {
 
-    submodule = {
-      url = "ssh://git@github.com:insanemor/dconf-clientes.git?submodules=1";
-      #path = ./profile/clientes;
-      flake = false;
-    };
+    # submodule = {
+    #   url = "ssh://git@github.com:insanemor/dconf-clientes.git?submodules=1";
+    #   #path = ./profile/clientes;
+    #   flake = false;
+    # };
+
+    dconf-insanemor = "path:/home/ins/dconf/clientes";
 
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-23.11";
