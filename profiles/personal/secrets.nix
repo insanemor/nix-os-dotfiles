@@ -19,7 +19,7 @@
   };
 
   imports = [ 
-      #../clientes/SBIT/nixos/main.nix
+    ../clientes/SBIT/nixos/main.nix
   ];
 
 }
