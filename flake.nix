@@ -193,11 +193,15 @@
     # };
 
     #dconf-insanemor = "path:/home/ins/dconf/clientes";
-
-    ssh-git-example = {
-      url = "git+ssh://git@github.com/insanemor/dconf-clientes.git?shallow=1";
+    git-directory-example = {
+      url = "git+file:/home/ins/dconf/clientes?shallow=1";
       flake = false;
     };
+
+    # ssh-git-example = {
+    #   url = "git+ssh://git@github.com/insanemor/dconf-clientes.git?shallow=1";
+    #   flake = false;
+    # };
 
     # bar = {
     #   url = "github:insanemor/dconf-clientes/main";
