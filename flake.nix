@@ -130,7 +130,7 @@
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile)
               + "/home.nix") # load home.nix from selected PROFILE
-            ./profiles/personal/secrets.nix
+            #./profiles/personal/secrets.nix
             # inputs.plasma-manager.homeManagerModules.plasma-manager
             # inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
             # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
