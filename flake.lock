@@ -130,6 +130,23 @@
         "type": "github"
       }
     },
+    "dconf-insanemor": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714315416,
+        "narHash": "sha256-BmzT7eRPdp38Dyr1838/JacNhMGxx8ddDNTM71hIPVw=",
+        "ref": "refs/heads/main",
+        "rev": "933100b6b26fb5de176fec8424b32addb2cfab3a",
+        "shallow": true,
+        "type": "git",
+        "url": "file:/home/ins/dconf/clientes"
+      },
+      "original": {
+        "shallow": true,
+        "type": "git",
+        "url": "file:/home/ins/dconf/clientes"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -348,6 +365,7 @@
     "root": {
       "inputs": {
         "blocklist-hosts": "blocklist-hosts",
+        "dconf-insanemor": "dconf-insanemor",
         "home-manager-stable": "home-manager-stable",
         "home-manager-unstable": "home-manager-unstable",
         "nixpkgs": "nixpkgs",
