@@ -1,4 +1,4 @@
-{ lib, config, pkgs, userSettings, options, ... }:
+{ inputs, lib, config, pkgs, userSettings, options, ... }:
 
 {
   
@@ -20,7 +20,8 @@
 
   imports = [ 
     #../clientes/SBIT/nixos/main.nix
-    ${dconf-insanemor}/SBIT/nixos/main.nix
+    ${inputs.dconf-insanemor}/SBIT/nixos/main.nix
+
   ];
 
 }
