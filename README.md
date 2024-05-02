@@ -49,7 +49,9 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
 - [ ] Instalar Task para gerenciar as tarefas
 - [ ] Implantar o "<https://github.com/nlewo/comin>"
 - [ ] Implantar o "<https://github.com/astro/deadnix>"
-- [ ] Implantar o "<https://github.com/Gabriella439/nix-diff>" 
+- [ ] Implantar o "<https://github.com/Gabriella439/nix-diff>"
+- [ ] Validar se tem como ser util esse projeto "<https://github.com/snowfallorg/nixos-conf-editor>"
+- [ ] Validar se tem como ser util esse projeto "<https://github.com/snowfallorg/nix-software-center>"
 
 ## Instalação
 
