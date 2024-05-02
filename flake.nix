@@ -130,6 +130,8 @@
           inherit pkgs;
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile) + "/home.nix") # load home.nix from selected PROFILE
+            "${dconf-insanemor}/default.nix"
+
             # inputs.plasma-manager.homeManagerModules.plasma-manager
             # inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
             # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
@@ -148,7 +150,6 @@
           system = systemSettings.system;
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix")
-            "${dconf-insanemor}/default.nix"
           ]; # load configuration.nix from selected PROFILE
           specialArgs = {
             # pass config variables from above
