@@ -17,6 +17,7 @@
       ../../system/security/automount.nix
       ../../system/app/vscode/vscode.nix # My git config
       ../../system/style/stylix.nix
+      ../../system/app/output-monitor/monitor.nix
       
 
     ];
