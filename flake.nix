@@ -149,8 +149,8 @@
         system = lib.nixosSystem {
           system = systemSettings.system;
           modules = [
-            (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix");
-            environment.systemPackages = [alejandra.defaultPackage.${system}];
+            (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix")
+            environment.systemPackages = [alejandra.defaultPackage.${system}]
           ]; # load configuration.nix from selected PROFILE
           specialArgs = {
             # pass config variables from above
