@@ -19,7 +19,7 @@
   #---------------------------------------------------------------------
   description = "Flake of Insan&moR";
 
-  outputs = inputs@{ self, ... }:
+  outputs = inputs@{ self, dconf-insanemor, ... }:
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
@@ -124,6 +124,14 @@
         forAllSystems (system: import inputs.nixpkgs { inherit system; });
 
     in {
+
+      nixpkgs.config = {
+        allowUnfree = true;
+        packageOverrides = pkg: rec {
+          insConfigs = import "${dconf-insanemor}/default.nix";
+        };
+      };
+
       homeConfigurations = {
         user = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
@@ -131,6 +139,7 @@
             (./. + "/profiles" + ("/" + systemSettings.profile)
               + "/home.nix") # load home.nix from selected PROFILE
             #./profiles/personal/secrets.nix
+            # insConfigs./default.nix
             # inputs.plasma-manager.homeManagerModules.plasma-manager
             # inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
             # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks

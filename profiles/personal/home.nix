@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, userSettings, ... }:
+{ inputs, insConfig, lib, config, pkgs, userSettings, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -13,7 +13,8 @@
               ../../user/app/libreoffice/libreoffice.nix
             ]; #++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
 
-  inputs.dconf-insanemor.secrets.enable = true;
+  #dconf-insanemor.secrets.enable = true;
+  insConfig.secrets.enable = true;
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
