@@ -195,7 +195,6 @@
     dconf-insanemor = {
       url = "git+file:/home/ins/dconf/clientes?shallow=1";
       flake = false;
-      submodules=true;
     };
 
     # ssh-git-example = {
