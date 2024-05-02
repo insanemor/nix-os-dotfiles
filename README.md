@@ -45,7 +45,9 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
       a ideia é compartilhar esse devbox shell com todos os cliente assim tendo um histórico de comandos compartilhado.
 - [X] descobrir como adicionar as secrets dos clientes.
 - [ ] Criar um devbox com kubernetes de lab interno usando o kind.
+  - [ ] ver se compensa usar esse modelo ou ficar no task com o kind. "<https://github.com/hall/kubenix/tree/main>"
 - [ ] Instalar Task para gerenciar as tarefas
+- [ ] Implantar o "<https://github.com/nlewo/comin>"
 
 ## Instalação
 
