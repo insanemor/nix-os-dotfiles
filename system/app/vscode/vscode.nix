@@ -12,6 +12,7 @@
       ms-vscode-remote.remote-containers
       eamodio.gitlens
       github.copilot
+      kamadorueda.alejandra
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "remote-ssh-edit";
