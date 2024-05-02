@@ -48,6 +48,8 @@ Este repositório contém configurações para NixOS e Home Manager, ideal para 
   - [ ] ver se compensa usar esse modelo ou ficar no task com o kind. "<https://github.com/hall/kubenix/tree/main>"
 - [ ] Instalar Task para gerenciar as tarefas
 - [ ] Implantar o "<https://github.com/nlewo/comin>"
+- [ ] Implantar o "<https://github.com/astro/deadnix>"
+- [ ] Implantar o "<https://github.com/Gabriella439/nix-diff>" 
 
 ## Instalação
 
