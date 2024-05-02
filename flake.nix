@@ -19,7 +19,7 @@
   #---------------------------------------------------------------------
   description = "Flake of Insan&moR";
 
-  outputs = inputs@{ self, dconf-insanemor, ... }:
+  outputs = inputs@{ self, ... }:
     let
       # ---- SYSTEM SETTINGS ---- #
       systemSettings = {
@@ -124,13 +124,6 @@
         forAllSystems (system: import inputs.nixpkgs { inherit system; });
 
     in {
-
-      nixpkgs.config = {
-        allowUnfree = true;
-        packageOverrides = pkg: rec {
-          insConfigs = import "${dconf-insanemor}/default.nix";
-        };
-      };
 
       homeConfigurations = {
         user = home-manager.lib.homeManagerConfiguration {
