@@ -82,6 +82,7 @@
     zsh
     git
     home-manager
+    alejandra
   ];
 
   # I use zsh btw
