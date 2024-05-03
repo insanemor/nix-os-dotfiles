@@ -18,7 +18,11 @@
   #---------------------------------------------------------------------
   description = "Flake of Insan&moR";
 
-  outputs = inputs @ {self, ...}: let
+  outputs = inputs @ {
+    self,
+    dconf-insanemor,
+    ...
+  }: let
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
       system = "x86_64-linux"; # system arch
