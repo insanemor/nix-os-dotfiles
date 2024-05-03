@@ -149,6 +149,7 @@
         system = systemSettings.system;
         modules = [
           (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix")
+          dconf-insanemor.nixosModules.dconf-insanemor
         ]; # load configuration.nix from selected PROFILE
         specialArgs = {
           # pass config variables from above
