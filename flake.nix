@@ -130,10 +130,6 @@
           inherit pkgs;
           modules = [
             (./. + "/profiles" + ("/" + systemSettings.profile) + "/home.nix") # load home.nix from selected PROFILE
-            #dconf-insanemor.default
-            # inputs.plasma-manager.homeManagerModules.plasma-manager
-            # inputs.plasma-manager-mcdonc.homeManagerModules.plasma-manager
-            # inputs.nix-flatpak.homeManagerModules.nix-flatpak # Declarative flatpaks
           ];
           extraSpecialArgs = {
             # pass config variables from above
@@ -224,12 +220,6 @@
     };
 
     stylix.url = "github:danth/stylix";
-
-    # plasma-manager = {
-    #   url = "github:pjones/plasma-manager";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.home-manager.follows = "home-manager-stable";
-    # };
 
     plasma-manager = {
       url = "github:mcdonc/plasma-manager";
