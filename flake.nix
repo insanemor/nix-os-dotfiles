@@ -133,7 +133,7 @@
         inherit pkgs;
         modules = [
           (./. + "/profiles" + ("/" + systemSettings.profile) + "/home.nix") # load home.nix from selected PROFILE
-           (dconf-insanemor.nixosModules.dconf-insanemor {} )
+          dconf-insanemor.nixosModules.dconf-insanemor
         ];
         extraSpecialArgs = {
           # pass config variables from above
@@ -149,7 +149,7 @@
         system = systemSettings.system;
         modules = [
           (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix")
-           (dconf-insanemor.nixosModules.dconf-insanemor {} )
+          dconf-insanemor.nixosModules.dconf-insanemor
         ]; # load configuration.nix from selected PROFILE
         specialArgs = {
           # pass config variables from above
@@ -191,8 +191,12 @@
     # };
 
     #dconf-insanemor = "path:/home/ins/dconf/clientes";
+    # dconf-insanemor = {
+    #   url = "git+file:/home/ins/dconf/clientes?shallow=1";
+    # };
+
     dconf-insanemor = {
-      url = "git+file:/home/ins/dconf/clientes?shallow=1";
+      url = "github:insanemor/dconf-clientes";
     };
 
     # ssh-git-example = {
