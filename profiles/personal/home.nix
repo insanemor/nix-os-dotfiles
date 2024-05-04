@@ -18,8 +18,6 @@
     ../../user/app/libreoffice/libreoffice.nix
   ]; #++ lib.optional (builtins.pathExists ./secrets.nix) ./secrets.nix;
 
-  dconf-insanemor.taskfile.enable = true;
-
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   home.packages = with pkgs; [

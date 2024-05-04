@@ -18,11 +18,7 @@
   #---------------------------------------------------------------------
   description = "Flake of Insan&moR";
 
-  outputs = inputs @ {
-    self,
-    dconf-insanemor,
-    ...
-  }: let
+  outputs = inputs @ {self, ...}: let
     # ---- SYSTEM SETTINGS ---- #
     systemSettings = {
       system = "x86_64-linux"; # system arch
@@ -133,7 +129,6 @@
         inherit pkgs;
         modules = [
           (./. + "/profiles" + ("/" + systemSettings.profile) + "/home.nix") # load home.nix from selected PROFILE
-          dconf-insanemor.nixosModules.dconf-insanemor
         ];
         extraSpecialArgs = {
           # pass config variables from above
@@ -149,7 +144,6 @@
         system = systemSettings.system;
         modules = [
           (./. + "/profiles" + ("/" + systemSettings.profile) + "/configuration.nix")
-          dconf-insanemor.nixosModules.dconf-insanemor
         ]; # load configuration.nix from selected PROFILE
         specialArgs = {
           # pass config variables from above
@@ -196,9 +190,9 @@
     #   url = "git+file:/home/ins/dconf/clientes?shallow=1";
     # };
 
-    dconf-insanemor = {
-      url = "github:insanemor/dconf-clientes";
-    };
+    # dconf-insanemor = {
+    #   url = "github:insanemor/dconf-clientes";
+    # };
 
     # ssh-git-example = {
     #   url = "git+ssh://git@github.com/insanemor/dconf-clientes.git?shallow=1";
